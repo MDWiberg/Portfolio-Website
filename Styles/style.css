@@ -1,0 +1,55 @@
+/* 
+  Portfolio Project Stylesheet - index.html
+  Author: Matthew Wiberg 
+*/
+
+/* Universal Styles */
+
+html {
+  height: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.75rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+/* General Styles */
+
+/* Header Styles */
+
+/* Footer Styles */
