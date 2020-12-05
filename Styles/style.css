@@ -19,6 +19,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Kumbh Sans", sans-serif;
+  /* background-color: #F2F3F4; */
 }
 
 main {
@@ -35,35 +36,20 @@ h2 {
   margin: 2.5% 0;
 }
 
-/* h1 {
-  font-size: 2.25rem;
-  margin: 2rem 0;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.75rem;
-  margin: 1.5rem 0;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.25rem;
-  margin: 1.5rem 0;
-  font-weight: bold;
-} */
-
 /* General Styles */
 
 .container {
   width: 100%;
   padding-bottom: 5%;
-  /* background-color: hsla(23, 95%, 52%,1); */
   text-align: center;
 }
 
 .no-border-right {
   border-right: none;
+}
+
+.no-padding-right {
+  padding-right: 0;
 }
 
 /* Header Styles */
@@ -168,10 +154,10 @@ footer li {
 
 /* --- MEDIA QUERIES --- */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) {
 
   /* Header Styles */
-
+  /* Footer Styles */
 
 
   /* WEBSITE ABOUT PAGE */
@@ -187,16 +173,13 @@ footer li {
     align-items: center;
     text-align: left;
   }
-
  .container img {
   width: 55%;
   }
-
   .container h2 {
     width: 90%;
     margin: 0 0 5% 0;
   }
-
   .container-text-positioning {
     width: 100%;
   }
@@ -206,7 +189,6 @@ footer li {
   #introduction {
     flex-direction: row-reverse;
   }
-
   #introduction p {
     width: 90%;
   }
@@ -214,19 +196,96 @@ footer li {
   /* Portfolio Styles */
 
   #portfolio  {
+    padding-top: 15%;
     padding-bottom: 10%;
   }
-
+  #portfolio h2 {
+    margin: 0 auto 5% auto;
+  }
   #portfolio h2,
   #portfolio p {
     text-align: right;
     float: right;
   }
-
   #portfolio p  {
     margin: 0 auto;
     width: 65%;
   }
+  #portfolio img {
+    width: 70%;
+  }
+
+    /* WEBSITE ABOUT PAGE */
+    /* WEBSITE PORTFOLIO PAGE */
+    /* WEBSITE CONTACT PAGE */
+
+}
+
+@media only screen and (min-width: 769px) {
+
+  /* Header Styles */
+
+  header {
+    padding: 4% 4%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1,
+  header nav {
+  padding: 0;
+  display: inline-block;
+  }
+
+  header nav {
+    width: 40%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header li {
+    width: auto;
+    padding: 0 2%;
+    border: none;
+    font-size: 1.4rem;
+    background-color: black;
+  }
+
+  header a {
+    color: white;
+  }
+  
+  /* Footer Styles */
+
+
+  /* WEBSITE INTRODUCTION PAGE */
+
+  /* General Styles */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  /* Portfolio Styles */
+
+
+
+    /* WEBSITE ABOUT PAGE */
+    /* WEBSITE PORTFOLIO PAGE */
+    /* WEBSITE CONTACT PAGE */
 
 }
 
