@@ -4,7 +4,6 @@
 */
 
 /* Universal Styles */
-
 html {
   height: 100%;
   font-size: 16px;
@@ -31,7 +30,6 @@ h2 {
 }
 
 /* General Styles */
-
 .container {
   width: 100%;
   padding-bottom: 5%;
@@ -50,7 +48,6 @@ h2 {
 }
 
 /* Header Styles */
-
 header {
   width: 100%;
   text-align: center;
@@ -61,7 +58,7 @@ header h1 {
   padding: 20px 0;
 }
 header ul {
-  height: 56px;
+  height: 50px;
   display: flex;
 }
 header li {
@@ -89,8 +86,7 @@ header a {
 
 /* WEBSITE INTRODUCTION PAGE */
 
-/* introduction Styles */
-
+/* Introduction Styles */
 #introduction img {
   max-width: 100%;
 }
@@ -98,36 +94,75 @@ header a {
   display: none;
 }
 
-/* portfolio Styles */
-
+/* Portfolio Styles */
 #portfolio img {
   max-width: 100%;
 }
+#portfolio hr {
+  display: none;
+}
+
 
 /* WEBSITE ABOUT PAGE */
 
-/* WEBSITE PORTFOLIO PAGE */
+/* About Styles */
+#about img {
+  max-width: 100%;
+}
+#about h2,
+#about p {
+  color: black;
+}
 
+/* Skills Styles */
+#skills {
+  grid-area: 1/1/3/13;
+  background-color: darkblue;
+}
+
+/* Description Styles */
+#description {
+  grid-area: 3/1/5/13;
+  background-color: orange;
+}
+
+/* Profile Styles */
+#profile {
+  grid-area: 5/1/7/13;
+  background-color: firebrick;
+}
+
+
+/* WEBSITE PORTFOLIO PAGE */
 /* WEBSITE CONTACT PAGE */
 
 
 /* Footer Styles */
-
 footer {
   width: 100%;
-  padding: 5% 2.5%;
+  padding: 20px 45px 30px 45px;
   color: white;
   background-color: black;
   text-align: center;
 }
 footer nav {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
 }
 footer li {
   margin: 0 1%;
   display: inline-block;
 }
+footer img {
+  transition: opacity 0.25s;
+}
+footer img:hover {
+  opacity: 0.5;
+}
+
+
+
+
 
 
 
@@ -135,73 +170,62 @@ footer li {
 
 @media only screen and (min-width: 480px) {
 
+  /* Universal Styles */
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* General Styles */
+
   /* Header Styles */
   /* Footer Styles */
 
 
-  /* WEBSITE ABOUT PAGE */
-
-  /* General Styles */
-
-  h2 {
-    font-size: 1.75rem;
-  }
-  .container {
-    width: 85%;
-    margin: 0 auto;
-  }
+  /* WEBSITE INTRODUCTION PAGE */
 
   /* Introduction Styles */
 
-  #introduction {
-    padding-top: 5%;
+  /* Portfolio Styles */
+  #portfolio {
+    background-color: rgba(230,126,34,1);
+  }
+  #portfolio img {
+    display: none;
+  }
+  #portfolio h2 {
+    padding-top: 4%;
+    margin-top: 0;
+    margin-bottom: 1.5%;
+  }
+  #portfolio hr {
+    height: 3px;
+    width: 65px;
+    margin: 0 auto 1.5% auto;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    background-color: white;
+    display: block;
+  }
+  #portfolio h2,
+  #portfolio p {
+    color: white;
   }
 
-    /* WEBSITE ABOUT PAGE */
-    /* WEBSITE PORTFOLIO PAGE */
-    /* WEBSITE CONTACT PAGE */
+  /* WEBSITE ABOUT PAGE */
+  /* WEBSITE PORTFOLIO PAGE */
+  /* WEBSITE CONTACT PAGE */
 
 }
 
 @media only screen and (min-width: 768px) {
 
   /* Icon Styles */
-  
   .material-icons.md-48 { font-size: 48px;}
   .material-icons.md-light { color: rgba(255, 255, 255, 0.9); }
 
-  /* Header Styles */
-
-  header {
-    padding: 30px 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header h1 {
-    padding: 0;
-  }
-  header li {
-    width: auto;
-    padding: 0 10px;
-    border: none;
-    font-size: 1.4rem;
-    background-color: black;
-  }
-  header a {
-    color: white;
-  }
-  
-  /* Footer Styles */
-
-
-  /* WEBSITE INTRODUCTION PAGE */
-
-  /* General Styles */
-
-  h1 {
-    font-size: 2.5rem;
-  }
+  /* Universal Styles */
   h2 {
     font-size: 2.25rem;
     margin-top: 0;
@@ -211,14 +235,58 @@ footer li {
     font-size: 1.25rem;
     color: rgba(255,255,255, 0.7);
   }
+
+  /* General Styles */
   .container {
     width: 100%;
   }
+  .grid-container-12c {
+    display: grid;
+    grid-template: repeat(6, 1fr)/repeat(12, 1fr);
+  }
+
+  /* Header Styles */
+  header {
+    padding: 12.5px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    padding: 0;
+  }
+  header li {
+    width: auto;
+    padding: 0 25px;
+    border: none;
+    font-size: 1.25rem;
+    background-color: transparent;
+  }
+  header li:active {
+    background-color: transparent;
+  }
+  header li a {
+    color: rgba(255,255,255,1.0);
+    transition: color 0.25s;
+  }
+  header li a:hover {
+    color: rgba(255,255,255,0.5)
+  }
+  
+  /* Footer Styles */
+  footer {
+    padding: 20px 45px 30px 45px;
+  }
+  footer nav {
+    margin-bottom: 10px;
+  }
+
+
+  /* WEBSITE INTRODUCTION PAGE */
 
   /* Introduction Styles */
-
   #introduction {
-    height: 60vh;
+    height: 70vh;
     padding: 0;
     background-image: url("../Images/avatar.jpg");
     background-repeat: no-repeat;
@@ -241,20 +309,28 @@ footer li {
   #introduction img {
     display: none;
   }
-  #introduction h2,
-  #introduction p {
+  #introduction h2 {
     z-index: 2;
     margin-bottom: 1.5%;
   }
+  #introduction p {
+    z-index: 2;
+    margin-bottom: 6.5%;
+  }
   #introduction a {
     z-index: 2;
-    margin-bottom: 4%;
     display: block;
+  }
+  #introduction span {
+    color: rgba(255,255,255,0.7);
+    transition: color 0.25s;
+  }
+  #introduction span:hover {
+    color: rgba(255,255,255,0.5);
   }
 
   /* Portfolio Styles */
-
-  #portfolio {
+  /* #portfolio {
     background-color: rgba(230,126,34,1);
   }
   #portfolio img {
@@ -273,33 +349,55 @@ footer li {
     border-radius: 3px;
     color: white;
     background-color: white;
+  } */
+
+  /* WEBSITE ABOUT PAGE */
+
+  /* About Styles */
+  #about {
+    height: 75vh;
+    padding-bottom: 0;
+    background-color: gray;
+  }
+  #about img {
+    display: none;
   }
 
-    /* WEBSITE ABOUT PAGE */
-    /* WEBSITE PORTFOLIO PAGE */
-    /* WEBSITE CONTACT PAGE */
+  /* Skills Styles */
+  #skills {
+    grid-area: 1/1/4/9;
+    background-color:gray;
+  }
+
+  /* Description Styles */
+  #description {
+    grid-area: 4/1/7/9;
+    background-color: slateblue;
+  }
+
+  /* Profile Styles */
+  #profile {
+    grid-area: 1/9/7/13;
+    background-color: darkgray;
+  }
+
+  /* WEBSITE PORTFOLIO PAGE */
+  /* WEBSITE CONTACT PAGE */
 
 }
 
 @media only screen and (min-width: 1024px) {
-    /* Header Styles */
 
-    header li {
-      font-size: 1.5rem;
-    }
-    /* Footer Styles */
-  
-  
-    /* WEBSITE INTRODUCTION PAGE */
+  /* Universal Styles */
+  /* General Styles */
 
-    /* General Styles */
-    
-    /* Portfolio Styles */
-  
-  
-  
-      /* WEBSITE ABOUT PAGE */
-      /* WEBSITE PORTFOLIO PAGE */
-      /* WEBSITE CONTACT PAGE */
+  /* Header Styles */
+  /* Footer Styles */
+
+
+  /* WEBSITE INTRODUCTION PAGE */
+  /* WEBSITE ABOUT PAGE */
+  /* WEBSITE PORTFOLIO PAGE */
+  /* WEBSITE CONTACT PAGE */
 
 }
