@@ -151,22 +151,37 @@ main {
 /* Profile Styles */
 #profile {
   grid-area: 3/1/4/2;
+  padding: 5% 0;
+}
+#profile h2 {
+  margin-top: 0;
 }
 /* Skills Styles */
 #skills {
   grid-area: 4/1/5/2;
+  padding: 5% 0;
   background-color: rgba(230,126,34,1);
 }
-#skills h2 {
-  margin: 5% 0 2.5% 0;
-  color: white;
-}
+#skills h2,
 #skills p {
+  margin-top: 0;
   color: white;
 }
+
 
 
 /* WEBSITE PORTFOLIO PAGE */
+
+/* Portpage Styles */
+#portpage {
+  display: grid;
+  padding-bottom: 0;
+  grid-template-columns: 1fr;
+  background-color: lightblue;
+}
+/* Common Projects Section Styles */
+
+
 /* WEBSITE CONTACT PAGE */
 
 
@@ -406,15 +421,19 @@ footer img:hover {
     padding: 2.5% 5%;
     grid-area: 5/4/7/13;
   }
-  #skills h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
   .skills-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  #skills h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black;
+  }
+  #skills p {
+    color: black;
   }
   .skills-container p {
     width: 20%;
