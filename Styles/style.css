@@ -43,7 +43,7 @@ h2 {
 }
 .grid-container-12c {
   display: grid;
-  grid-template: repeat(4, auto)/1fr;
+  grid-template: repeat(3, auto)/1fr;
 }
 .no-border-right {
   border-right: none;
@@ -53,7 +53,7 @@ h2 {
 }
 .short-hr {
   height: 1px;
-  width: 20%;
+  width: 80%;
   margin: 5% auto 5% auto;
   text-align: center;
   border: 0px solid black;
@@ -132,7 +132,8 @@ main {
 
 /* Description Styles */
 #description {
-  grid-area: 1/1/2/2;
+  /* grid-area: 1/1/2/2; */
+  display: none;
 }
 #description p {
   display: none;
@@ -140,7 +141,7 @@ main {
 
 /* Profile-Picture Styles */
 #profile-picture {
-  grid-area: 2/1/3/2;
+  grid-area: 1/1/2/2;
   height: 25vh;
   background-image: url("../Images/avatar.jpg");
   background-repeat: no-repeat;
@@ -150,7 +151,7 @@ main {
 
 /* Profile Styles */
 #profile {
-  grid-area: 3/1/4/2;
+  grid-area: 2/1/3/2;
   padding: 5% 0;
 }
 #profile h2 {
@@ -158,7 +159,7 @@ main {
 }
 /* Skills Styles */
 #skills {
-  grid-area: 4/1/5/2;
+  grid-area: 3/1/4/2;
   padding: 5% 0;
   background-color: rgba(230,126,34,1);
 }
@@ -173,13 +174,27 @@ main {
 /* WEBSITE PORTFOLIO PAGE */
 
 /* Portpage Styles */
+
+#portpage-title {
+  display: none;
+}
 #portpage {
   display: grid;
   padding-bottom: 0;
   grid-template-columns: 1fr;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
-/* Common Projects Section Styles */
+.project-container {
+  padding-bottom: 5%;
+}
+.project-container h3 {
+  width: 85%;
+  margin: 5% auto 2.5% auto;
+  font-size: 1.25rem;
+}
+.project-container img {
+  max-width: 100%;
+}
 
 
 /* WEBSITE CONTACT PAGE */
@@ -261,6 +276,12 @@ footer img:hover {
 
   /* WEBSITE ABOUT PAGE */
   /* WEBSITE PORTFOLIO PAGE */
+
+  /* Portfolio Page Styles */
+  .project-container h3 {
+    font-size: 1.5rem;
+  }
+
   /* WEBSITE CONTACT PAGE */
 
 }
@@ -408,8 +429,9 @@ footer img:hover {
 
   /* Description Styles */
   #description {
-    padding: 2.5%;
     grid-area: 1/4/5/13;
+    padding: 2.5%;
+    display: block;
   }
   #description p {
     width: 85%;
@@ -478,6 +500,49 @@ footer img:hover {
 
 
   /* WEBSITE PORTFOLIO PAGE */
+
+  #portpage-title {
+    margin: 3.5% 0;
+    font-size: 2.25rem;
+    text-align: center;
+    display: block;
+  }
+  #portpage {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7.5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    /* grid-gap: 75px; */
+    row-gap: 50px;
+    column-gap: 70px;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-color: orange;
+    box-shadow: 0px 4px 10px black;
+  }
+  .project-container:hover .project-text {
+    top: 0;
+  }
+  .project-container img {
+    display: none;
+  }
+  .project-container h3 {
+    margin-top: 4%;
+  }
+  .project-text {
+    padding-bottom: 4%;
+    position: relative;
+    top: 150px;
+    background-color: lightblue;
+    transition: top 0.3s;
+  }
   /* WEBSITE CONTACT PAGE */
 
 }
