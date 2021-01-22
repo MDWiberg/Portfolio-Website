@@ -20,30 +20,44 @@ body {
 }
 main {
   width: 100%;
+  color: black;
+}
+a {
+  color: white;
 }
 h1,h2,h3 {
   margin: 0;
   padding: 0;
   /* font-family: "Russo One", sans-serif; */
 }
-h2 {
-  margin: 2.5% 0;
+p {
+  margin: 0;
 }
 
 /* General Styles */
+/* .bottom-footer {
+  position: absolute;
+  bottom: 0;
+}
+.content-wrap {
+  min-height: 100%;
+  padding-bottom: 118px;
+  position: relative;
+} */
 .container {
   width: 100%;
-  padding-bottom: 5%;
-  text-align: center;
+  padding: 20px;
+  /* text-align: center; */
   line-height: 1.3;
+  z-index: 2;
 }
 .container p {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 .grid-container-12c {
   display: grid;
-  grid-template: repeat(3, auto)/1fr;
+  grid-template-columns: 1fr;
 }
 .no-border-right {
   border-right: none;
@@ -51,15 +65,7 @@ h2 {
 .no-padding-right {
   padding-right: 0;
 }
-.short-hr {
-  height: 1px;
-  width: 80%;
-  margin: 5% auto 5% auto;
-  text-align: center;
-  border: 0px solid black;
-  border-radius: 0px;
-  background-color: black;
-}
+
 
 /* Header Styles */
 header {
@@ -76,7 +82,7 @@ header ul {
 }
 header li {
   height: 100%;
-  width: 25%;
+  width: 33.33%;
   color: black;
   list-style-type: none;
   border-top: 3px solid white;
@@ -94,12 +100,6 @@ header a {
   justify-content: center;
   align-items: center;
 }
-
-/* Main Styles */
-main {
-  color: black;
-}
-
 
 
 /* WEBSITE INTRODUCTION PAGE */
@@ -119,100 +119,143 @@ main {
 #portfolio hr {
   display: none;
 }
+#introduction,
+#portfolio {
+  text-align: center;
+}
+#introduction h2,
+#portfolio h2 {
+  margin-bottom: 10px;
+}
+
 
 /* WEBSITE ABOUT PAGE */
 
-/* About Styles */
-#about {
-  padding-bottom: 0;
+/* About-Me Styles */
+.about-me {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
 }
-#about p {
-  margin-bottom: 1.5%;
+.about-me h2 {
+  padding: 15px;
+  text-align: center;
 }
-
-/* Description Styles */
-#description {
-  /* grid-area: 1/1/2/2; */
-  display: none;
+.about-me h3 {
+  margin: 15px 0;
 }
-#description p {
-  display: none;
-}
-
-/* Profile-Picture Styles */
-#profile-picture {
-  grid-area: 1/1/2/2;
-  height: 25vh;
-  background-image: url("../Images/avatar.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* Profile Styles */
-#profile {
-  grid-area: 2/1/3/2;
-  padding: 5% 0;
-}
-#profile h2 {
+#top-header {
   margin-top: 0;
 }
-/* Skills Styles */
-#skills {
-  grid-area: 3/1/4/2;
-  padding: 5% 0;
-  background-color: rgba(230,126,34,1);
+.about-me-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
-#skills h2,
-#skills p {
-  margin-top: 0;
-  color: white;
+.about-text {
+  width: 100%;
+  padding: 15px;
 }
+.about-text ul {
+  list-style-type: none;
+}
+.about-text li {
+  margin-top: 10px;
+}
+.about-img-container {
+  width: 100%;
+  /* padding: 15px; */
+}
+.about-img-container img {
+  max-width: 100%;
+}
+
+
 
 
 
 /* WEBSITE PORTFOLIO PAGE */
 
 /* Portpage Styles */
-
-#portpage-title {
-  display: none;
+.portpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.3;
+  text-align: center;
 }
-#portpage {
-  display: grid;
-  padding-bottom: 0;
-  grid-template-columns: 1fr;
-  /* background-color: lightblue; */
+.portpage h2 {
+  padding: 15px;
 }
-.project-container {
-  padding-bottom: 5%;
+.portpage h3 {
+  margin-bottom: 10px;
 }
-.project-container h3 {
-  width: 85%;
-  margin: 5% auto 2.5% auto;
-  font-size: 1.25rem;
+.portpage a {
+  color: black;
 }
-.project-container img {
+.portpage-content img {
   max-width: 100%;
 }
+.project-text-container {
+    padding: 15px;
+}
 
 
-/* WEBSITE CONTACT PAGE */
+/* Project-Pages Styles */
+.project-page {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.project-page h2 {
+  padding: 15px;
+  text-align: center;
+}
+.project-page h3 {
+  margin: 15px 0;
+}
+.project-page p {
+  margin: 0;
+}
+#top-header {
+  margin-top: 0;
+}
+.project-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.project-text {
+  width: 100%;
+  padding: 15px;
+}
+.project-img-container {
+  width: 100%;
+  /* padding: 15px; */
+}
+.project-img-container img {
+  max-width: 100%;
+}
 
 
 /* Footer Styles */
 footer {
   width: 100%;
-  padding: 20px 45px 30px 45px;
+  padding: 20px 45px 25px 45px;
   background-color: black;
   text-align: center;
 }
+footer small {
+  font-size: .85rem;
+}
 footer nav {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 footer li {
-  margin: 0 1%;
+  margin: 0 2.5px;
   display: inline-block;
 }
 footer img {
@@ -221,7 +264,6 @@ footer img {
 footer img:hover {
   opacity: 0.5;
 }
-
 
 
 
@@ -238,13 +280,21 @@ footer img:hover {
   }
 
   /* General Styles */
+  .bottom-footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .content-wrap {
+    min-height: 100%;
+    padding-bottom: 118px;
+    position: relative;
+  }
 
   /* Header Styles */
   /* Footer Styles */
 
 
   /* WEBSITE INTRODUCTION PAGE */
-
   /* Introduction Styles */
 
   /* Portfolio Styles */
@@ -255,9 +305,7 @@ footer img:hover {
     display: none;
   }
   #portfolio h2 {
-    padding-top: 4%;
-    margin-top: 0;
-    margin-bottom: 1.5%;
+    margin-bottom: 10px;
   }
   #portfolio h2,
   #portfolio p {
@@ -266,7 +314,7 @@ footer img:hover {
   #portfolio hr {
     height: 3px;
     width: 65px;
-    margin: 0 auto 1.5% auto;
+    margin: 10px auto;
     text-align: center;
     border: 1px solid white;
     border-radius: 3px;
@@ -275,14 +323,41 @@ footer img:hover {
   }
 
   /* WEBSITE ABOUT PAGE */
+  
+  /* About-Me Styles */
+  .about-img-container {
+    width: 90%;
+    padding: 0 15px;
+  }
+  .about-text {
+    width: 90%;
+    padding: 15px;
+  }
+  
+
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
-  .project-container h3 {
-    font-size: 1.5rem;
+  .portpage h2 {
+    font-size: 1.75rem;
+  }
+  .portpage h3 {
+    font-size: 1.25rem;
+  }
+  .portpage-content {
+    width: 90%;
+    padding: 0 15px 15px 15px;
   }
 
-  /* WEBSITE CONTACT PAGE */
+  /* Project-Pages Styles */
+  .project-img-container {
+    width: 90%;
+    padding: 0 15px;
+  }
+  .project-text {
+    width: 90%;
+    padding: 15px;
+  }
 
 }
 
@@ -295,21 +370,12 @@ footer img:hover {
   /* Universal Styles */
   h2 {
     font-size: 2.25rem;
-    margin-top: 0;
   }
-  p {
-    font-size: 1.25rem;
-  }
-
   /* General Styles */
-  .grid-container-12c {
-    display: grid;
-    grid-template: repeat(6, 1fr)/repeat(12, 1fr);
-  }
 
   /* Header Styles */
   header {
-    padding: 12.5px 45px;
+    padding: 15px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,8 +401,6 @@ footer img:hover {
     color: rgba(255,255,255,0.5)
   }
   
-  /* Footer Styles */
-
 
   /* WEBSITE INTRODUCTION PAGE */
 
@@ -366,18 +430,18 @@ footer img:hover {
     display: none;
   }
   #introduction h2 {
-    z-index: 2;
-    margin-bottom: 1.5%;
+    margin-bottom: 15px;
     color: rgba(255,255,255, 0.9);
+    z-index: 2;
   }
   #introduction p {
-    z-index: 2;
     margin-bottom: 6.5%;
     color: rgba(255,255,255, 0.7);
+    z-index: 2;
   }
   #introduction a {
-    z-index: 2;
     display: block;
+    z-index: 2;
   }
   #introduction span {
     color: rgba(255,255,255,0.7);
@@ -388,162 +452,32 @@ footer img:hover {
   }
 
   /* Portfolio Styles */
+  #portfolio {
+    height: 25vh;
+    /* display: flex;
+    align-items: center; */
+  }
+  #portfolio .container {
+    position: relative;
+    top: 15px;
+  }
+
 
   /* WEBSITE ABOUT PAGE */
 
-  /* About Styles */
-  .about-content {
-    min-height: 600px;
-    height: 80vh;
-    width: 100%;
-    padding: 0 22.5px;
-    display: flex;
-    align-items: center;
-    background-color: darkgray;
-  }
-  #about {
-    /* max-height: 800px;
-    min-height: 475px; */
-    height: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-    grid-gap: 15px;
-  }
-  /* #about img {
-    max-height: 165px;
-    max-width: 100%;
-  } */
-  #about h2 {
-    font-size: 1.5rem;
-  }
-  #about p {
-    font-size: 1rem;
-  }
-
-  /* Change background-color and box-shadow for four grid-items */
-  #description, #skills, #profile-picture,
-  #profile {
-    background-color: white;
-    box-shadow: 0px 4px 10px black;
-  }
-
-  /* Description Styles */
-  #description {
-    grid-area: 1/4/5/13;
-    padding: 2.5%;
-    display: block;
-  }
-  #description p {
-    width: 85%;
-    display: block;
-  }
-
-  /* Skills Styles */
-  #skills {
-    padding: 2.5% 5%;
-    grid-area: 5/4/7/13;
-  }
-  .skills-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  #skills h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: black;
-  }
-  #skills p {
-    color: black;
-  }
-  .skills-container p {
-    width: 20%;
-    margin: 5px 5px;
-    padding: 1.5% 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightgray;
-    border-radius: 5px;
-  }
-
-  /* Profile-Picture Styles */
-  #profile-picture {
-    grid-area: 1/1/3/4;
-    height: auto;
-    background-image: url("../Images/avatar.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  /* Profile Styles */
-  #profile {
-    grid-area: 3/1/7/4;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  #profile h2 {
-    margin: 0;
-  }
-  #profile p {
-    margin: 0;
-  }
-  #profile hr,
-  .description-text {
-    display: none;
-  }
-
-
-
   /* WEBSITE PORTFOLIO PAGE */
 
-  #portpage-title {
-    margin: 3.5% 0;
+  /* Portfolio Page Styles */
+  .portpage h2 {
     font-size: 2.25rem;
-    text-align: center;
-    display: block;
   }
-  #portpage {
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 7.5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 250px;
-    /* grid-gap: 75px; */
-    row-gap: 50px;
-    column-gap: 70px;
+  .portpage h3 {
+    font-size: 1.5rem;
   }
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 0;
-    overflow: hidden;
-    background-color: orange;
-    box-shadow: 0px 4px 10px black;
+  .portpage-content {
+    width: 80%;
   }
-  .project-container:hover .project-text {
-    top: 0;
-  }
-  .project-container img {
-    display: none;
-  }
-  .project-container h3 {
-    margin-top: 4%;
-  }
-  .project-text {
-    padding-bottom: 4%;
-    position: relative;
-    top: 150px;
-    background-color: lightblue;
-    transition: top 0.3s;
-  }
-  /* WEBSITE CONTACT PAGE */
+
 
 }
 
@@ -551,14 +485,143 @@ footer img:hover {
 
   /* Universal Styles */
   /* General Styles */
+  .grid-container-12c {
+    display: grid;
+    grid-template: repeat(6, 1fr)/repeat(12, 1fr);
+  }
 
   /* Header Styles */
   /* Footer Styles */
 
 
   /* WEBSITE INTRODUCTION PAGE */
+
+  /* Portfolio Styles */
+  #portfolio p {
+    width: 50%;
+  }
+
   /* WEBSITE ABOUT PAGE */
+
+  /* About-Me Styles */
+.about-me {
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.about-me h2 {
+  padding: 30px;
+  font-size: 3.25rem;
+  text-align: center;
+}
+.about-me h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+#top-header {
+  margin-top: 0;
+}
+.about-me-content {
+  max-width: 1400px;
+  width: 90%; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.about-text {
+  width: 100%;
+  padding: 15px;
+}
+.about-img-container {
+  width: 100%;
+  padding: 15px;
+}
+.about-img-container img {
+  max-width: 100%;
+}
+
   /* WEBSITE PORTFOLIO PAGE */
-  /* WEBSITE CONTACT PAGE */
+
+  /* Portfolio Page Styles */
+  .portpage h2 {
+    font-size: 3.25rem;
+    padding: 30px;
+  }
+  .portpage h3 {
+    font-size: 1.25rem;
+  }
+  .portpage-content {
+    max-width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    /* width: 45%; */
+    width: 350px;
+    padding: 15px 30px;
+  }
+  .project img {
+    height: 100%;
+    width: 100%; 
+    position: relative;
+    box-shadow: 0px 4px 10px black;
+    transition: opacity 0.2s;
+  }
+  .project img:hover {
+    opacity: 0.7;
+  }
+  .dim-layer {
+    height: 210px;
+    width: 270px;
+    /* width: 85%; */
+    margin: 0 auto;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  .dim-layer:hover {
+    background-color: black;
+  }
+
+  /* Project-Pages Styles */
+  .project-page {
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .project-page h2 {
+    padding: 30px;
+    font-size: 3.25rem;
+    text-align: center;
+  }
+  .project-page h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+  #top-header {
+    margin-top: 0;
+  }
+  .project-content {
+    max-width: 1400px;
+    width: 90%; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .project-text {
+    width: 100%;
+    padding: 15px;
+  }
+  .project-img-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .project-img-container img {
+    max-width: 100%;
+  }
 
 }
