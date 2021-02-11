@@ -41,7 +41,7 @@ p {
 }
 .content-wrap {
   min-height: 100%;
-  padding-bottom: 118px;
+  padding-bottom: 150px;
   position: relative;
 } */
 .container {
@@ -133,7 +133,6 @@ header a {
 
 /* About-Me Styles */
 .about-me {
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   line-height: 1.5;
@@ -165,7 +164,6 @@ header a {
 }
 .about-img-container {
   width: 100%;
-  /* padding: 15px; */
 }
 .about-img-container img {
   max-width: 100%;
@@ -204,7 +202,6 @@ header a {
 
 /* Project-Pages Styles */
 .project-page {
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   line-height: 1.5;
@@ -219,9 +216,6 @@ header a {
 .project-page p {
   margin: 0;
 }
-#top-header {
-  margin-top: 0;
-}
 .project-content {
   display: flex;
   flex-direction: column-reverse;
@@ -233,7 +227,6 @@ header a {
 }
 .project-img-container {
   width: 100%;
-  /* padding: 15px; */
 }
 .project-img-container img {
   max-width: 100%;
@@ -331,16 +324,12 @@ footer img:hover {
   }
   .about-text {
     width: 90%;
-    padding: 15px;
   }
   
 
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
-  .portpage h2 {
-    font-size: 1.75rem;
-  }
   .portpage h3 {
     font-size: 1.25rem;
   }
@@ -356,7 +345,6 @@ footer img:hover {
   }
   .project-text {
     width: 90%;
-    padding: 15px;
   }
 
 }
@@ -407,7 +395,6 @@ footer img:hover {
   /* Introduction Styles */
   #introduction {
     height: 70vh;
-    padding: 0;
     background-image: url("../Images/avatar.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -416,7 +403,6 @@ footer img:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
   }
   #introduction::before {
     content: " ";
@@ -468,9 +454,6 @@ footer img:hover {
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
-  .portpage h2 {
-    font-size: 2.25rem;
-  }
   .portpage h3 {
     font-size: 1.5rem;
   }
@@ -505,11 +488,7 @@ footer img:hover {
 
   /* About-Me Styles */
 .about-me {
-  /* padding: 10px; */
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  line-height: 1.5;
 }
 .about-me h2 {
   padding: 30px;
@@ -517,29 +496,20 @@ footer img:hover {
   text-align: center;
 }
 .about-me h3 {
-  margin: 15px 0;
   font-size: 1.5rem;
-}
-#top-header {
-  margin-top: 0;
 }
 .about-me-content {
   max-width: 1400px;
   width: 90%; 
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 .about-text {
   width: 100%;
-  padding: 15px;
 }
 .about-img-container {
   width: 100%;
   padding: 15px;
-}
-.about-img-container img {
-  max-width: 100%;
 }
 
   /* WEBSITE PORTFOLIO PAGE */
@@ -587,34 +557,24 @@ footer img:hover {
 
   /* Project-Pages Styles */
   .project-page {
-    /* padding: 10px; */
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    line-height: 1.5;
   }
   .project-page h2 {
     padding: 30px;
     font-size: 3.25rem;
-    text-align: center;
   }
   .project-page h3 {
     margin: 15px 0;
     font-size: 1.5rem;
   }
-  #top-header {
-    margin-top: 0;
-  }
   .project-content {
     max-width: 1400px;
     width: 90%; 
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
   .project-text {
     width: 100%;
-    padding: 15px;
   }
   .project-img-container {
     width: 100%;
