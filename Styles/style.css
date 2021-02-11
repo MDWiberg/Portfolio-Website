@@ -47,7 +47,6 @@ p {
 .container {
   width: 100%;
   padding: 20px;
-  /* text-align: center; */
   line-height: 1.3;
   z-index: 2;
 }
@@ -55,10 +54,10 @@ p {
   width: 90%;
   margin: 0 auto;
 }
-.grid-container-12c {
+/* .grid-container-12c {
   display: grid;
   grid-template-columns: 1fr;
-}
+} */
 .no-border-right {
   border-right: none;
 }
@@ -104,6 +103,16 @@ header a {
 
 /* WEBSITE INTRODUCTION PAGE */
 
+/* Introduction and Portfolio Styles */
+#introduction,
+#portfolio {
+  text-align: center;
+}
+#introduction h2,
+#portfolio h2 {
+  margin-bottom: 10px;
+}
+
 /* Introduction Styles */
 #introduction img {
   max-width: 100%;
@@ -119,14 +128,7 @@ header a {
 #portfolio hr {
   display: none;
 }
-#introduction,
-#portfolio {
-  text-align: center;
-}
-#introduction h2,
-#portfolio h2 {
-  margin-bottom: 10px;
-}
+
 
 
 /* WEBSITE ABOUT PAGE */
@@ -152,6 +154,14 @@ header a {
   flex-direction: column-reverse;
   align-items: center;
 }
+.about-contact-link {
+  color: black;
+  text-decoration: underline;
+  transition: opacity 0.25s;
+}
+.about-contact-link:hover {
+  opacity: 0.5;
+}
 .about-text {
   width: 100%;
   padding: 15px;
@@ -167,6 +177,15 @@ header a {
 }
 .about-img-container img {
   max-width: 100%;
+}
+.resume-btn {
+  width: auto;
+  margin: 15px 0;
+  color: black;
+  display: block;
+  font-size: 1.17rem;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 
@@ -195,7 +214,7 @@ header a {
 .portpage-content img {
   max-width: 100%;
 }
-.project-text-container {
+.portpage-text-container {
     padding: 15px;
 }
 
@@ -241,7 +260,8 @@ footer {
   text-align: center;
 }
 footer small {
-  font-size: .85rem;
+  color: gray;
+  font-size: .75rem;
 }
 footer nav {
   width: 100%;
@@ -263,7 +283,7 @@ footer img:hover {
 
 
 
-/* --- MEDIA QUERIES --- */
+/* ------ MEDIA QUERIES ------ */
 
 @media only screen and (min-width: 480px) {
 
@@ -288,32 +308,24 @@ footer img:hover {
 
 
   /* WEBSITE INTRODUCTION PAGE */
+
   /* Introduction Styles */
 
-  /* Portfolio Styles */
-  #portfolio {
-    background-color: rgba(230,126,34,1);
+  #introduction img {
+    width: 90%;
+    padding: 30px 15px 0 15px;
   }
+
+  /* Portfolio Styles */
+
   #portfolio img {
-    display: none;
+    width: 90%;
+    padding: 0 15px;
   }
   #portfolio h2 {
     margin-bottom: 10px;
   }
-  #portfolio h2,
-  #portfolio p {
-    color: white;
-  }
-  #portfolio hr {
-    height: 3px;
-    width: 65px;
-    margin: 10px auto;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 3px;
-    background-color: white;
-    display: block;
-  }
+
 
   /* WEBSITE ABOUT PAGE */
   
@@ -360,6 +372,9 @@ footer img:hover {
     font-size: 2.25rem;
   }
   /* General Styles */
+  .content-wrap {
+    display: block;
+  }
 
   /* Header Styles */
   header {
@@ -440,8 +455,24 @@ footer img:hover {
   /* Portfolio Styles */
   #portfolio {
     height: 25vh;
-    /* display: flex;
-    align-items: center; */
+    background-color: rgba(230,126,34,1);
+  }
+  #portfolio img {
+    display: none;
+  }
+  #portfolio h2,
+  #portfolio p {
+    color: white;
+  }
+  #portfolio hr {
+    height: 3px;
+    width: 65px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    display: block;
   }
   #portfolio .container {
     position: relative;
@@ -468,11 +499,6 @@ footer img:hover {
 
   /* Universal Styles */
   /* General Styles */
-  .grid-container-12c {
-    display: grid;
-    grid-template: repeat(6, 1fr)/repeat(12, 1fr);
-  }
-
   /* Header Styles */
   /* Footer Styles */
 
@@ -487,30 +513,33 @@ footer img:hover {
   /* WEBSITE ABOUT PAGE */
 
   /* About-Me Styles */
-.about-me {
-  align-items: center;
-}
-.about-me h2 {
-  padding: 30px;
-  font-size: 3.25rem;
-  text-align: center;
-}
-.about-me h3 {
-  font-size: 1.5rem;
-}
-.about-me-content {
-  max-width: 1400px;
-  width: 90%; 
-  flex-direction: row;
-  align-items: flex-start;
-}
-.about-text {
-  width: 100%;
-}
-.about-img-container {
-  width: 100%;
-  padding: 15px;
-}
+  .about-me {
+    align-items: center;
+  }
+  .about-me h2 {
+    padding: 30px;
+    font-size: 3.25rem;
+    text-align: center;
+  }
+  .about-me h3 {
+    font-size: 1.5rem;
+  }
+  .about-me-content {
+    max-width: 1400px;
+    width: 90%; 
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-img-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .resume-btn {
+    font-size: 1.5rem;
+  }
 
   /* WEBSITE PORTFOLIO PAGE */
 
