@@ -8,14 +8,25 @@ html {
   height: 100%;
   font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+  /* Disable smooth scrolling when users have prefers-reduced-motion enabled */
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
 body {
   height: 100%;
   width: 100%;
   font-family: "Verdana", sans-serif;
+  /* font-family: 'Trispace', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
   color: white;
 }
 main {
@@ -28,22 +39,12 @@ a {
 h1,h2,h3 {
   margin: 0;
   padding: 0;
-  /* font-family: "Russo One", sans-serif; */
 }
 p {
   margin: 0;
 }
 
 /* General Styles */
-/* .bottom-footer {
-  position: absolute;
-  bottom: 0;
-}
-.content-wrap {
-  min-height: 100%;
-  padding-bottom: 150px;
-  position: relative;
-} */
 .container {
   width: 100%;
   padding: 20px;
@@ -54,10 +55,6 @@ p {
   width: 90%;
   margin: 0 auto;
 }
-/* .grid-container-12c {
-  display: grid;
-  grid-template-columns: 1fr;
-} */
 .no-border-right {
   border-right: none;
 }
@@ -106,6 +103,7 @@ header a {
 /* Introduction and Portfolio Styles */
 #introduction,
 #portfolio {
+  /* line-height: 1.5; */
   text-align: center;
 }
 #introduction h2,
@@ -166,11 +164,9 @@ header a {
   width: 100%;
   padding: 15px;
 }
-.about-text ul {
-  list-style-type: none;
-}
 .about-text li {
   margin-top: 10px;
+  list-style-type: none;
 }
 .about-img-container {
   width: 100%;
@@ -199,14 +195,14 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.3;
+  line-height: 1.5;
   text-align: center;
 }
 .portpage h2 {
   padding: 15px;
 }
 .portpage h3 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .portpage a {
   color: black;
@@ -244,6 +240,10 @@ header a {
   width: 100%;
   padding: 15px;
 }
+.project-text li {
+  margin-top: 10px;
+  list-style-type: none;
+}
 .project-img-container {
   width: 100%;
 }
@@ -255,19 +255,15 @@ header a {
 /* Footer Styles */
 footer {
   width: 100%;
-  padding: 20px 45px 25px 45px;
+  padding: 20px 5px 25px 5px;
   background-color: black;
   text-align: center;
-}
-footer small {
-  color: gray;
-  font-size: .75rem;
 }
 footer nav {
   width: 100%;
   margin-bottom: 5px;
 }
-footer li {
+footer nav li {
   margin: 0 2.5px;
   display: inline-block;
 }
@@ -277,6 +273,26 @@ footer img {
 footer img:hover {
   opacity: 0.5;
 }
+footer small {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: .75rem;
+  display: inline-block;
+}
+#icon-credit-list {
+  margin: 10px 0;
+}
+.icon-credit-link {
+  transition: color 0.25s;
+}
+.icon-credit-link:hover {
+  color: white;
+}
+.icon-separator {
+  display: none;
+}
+
+
 
 
 
@@ -299,7 +315,7 @@ footer img:hover {
   }
   .content-wrap {
     min-height: 100%;
-    padding-bottom: 118px;
+    padding-bottom: 197px;
     position: relative;
   }
 
@@ -313,7 +329,7 @@ footer img:hover {
 
   #introduction img {
     width: 90%;
-    padding: 30px 15px 0 15px;
+    padding: 40px 15px 0 15px;
   }
 
   /* Portfolio Styles */
@@ -334,9 +350,13 @@ footer img:hover {
     width: 90%;
     padding: 0 15px;
   }
+  .about-img-container img {
+    border-radius: 3px;
+  }
   .about-text {
     width: 90%;
   }
+
   
 
   /* WEBSITE PORTFOLIO PAGE */
@@ -361,6 +381,29 @@ footer img:hover {
 
 }
 
+/* Breakpoint for footer list containing the links that credit the icons used */
+@media only screen and (min-width: 592px) {
+
+  /* General Styles */
+  .content-wrap {
+    padding-bottom: 157px;
+  }
+
+  /* Footer Styles */
+  footer {
+    padding: 20px 45px 25px 45px;
+  }
+  footer li {
+    display: inline-block;
+  }
+  .icon-separator {
+    display: inline;
+    color: gray;
+    font-size: 0.75rem;
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
 
   /* Icon Styles */
@@ -372,6 +415,12 @@ footer img:hover {
     font-size: 2.25rem;
   }
   /* General Styles */
+  .black-background {
+    background-color: black;
+  }
+  .transparent-background {
+    background-color: transparent;
+  }
   .content-wrap {
     display: block;
   }
@@ -403,14 +452,19 @@ footer img:hover {
   header li a:hover {
     color: rgba(255,255,255,0.5)
   }
+  #intro-header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
   
 
   /* WEBSITE INTRODUCTION PAGE */
 
   /* Introduction Styles */
   #introduction {
-    height: 70vh;
-    background-image: url("../Images/avatar.jpg");
+    height: 85vh;
+    background-image: url("../Images/introPageBackground1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -433,15 +487,16 @@ footer img:hover {
   #introduction h2 {
     margin-bottom: 15px;
     color: rgba(255,255,255, 0.9);
+    font-size: 3.25rem;
     z-index: 2;
   }
   #introduction p {
-    margin-bottom: 6.5%;
+    margin-bottom: 6%;
     color: rgba(255,255,255, 0.7);
     z-index: 2;
   }
   #introduction a {
-    display: block;
+    display: inline;
     z-index: 2;
   }
   #introduction span {
@@ -454,7 +509,7 @@ footer img:hover {
 
   /* Portfolio Styles */
   #portfolio {
-    height: 25vh;
+    height: 20vh;
     background-color: rgba(230,126,34,1);
   }
   #portfolio img {
@@ -481,6 +536,15 @@ footer img:hover {
 
 
   /* WEBSITE ABOUT PAGE */
+  
+  /* About-Me Styles */
+  .about-img-container {
+    width: 85%;
+    padding: 0 15px;
+  }
+  .about-text {
+    width: 85%;
+  }
 
   /* WEBSITE PORTFOLIO PAGE */
 
@@ -489,7 +553,7 @@ footer img:hover {
     font-size: 1.5rem;
   }
   .portpage-content {
-    width: 80%;
+    width: 85%;
   }
 
 
@@ -500,6 +564,9 @@ footer img:hover {
   /* Universal Styles */
   /* General Styles */
   /* Header Styles */
+  /* header {
+    padding: 30px 60px;
+  } */
   /* Footer Styles */
 
 
@@ -534,9 +601,12 @@ footer img:hover {
     width: 100%;
   }
   .about-img-container {
-    width: 100%;
+    width: 90%;
     padding: 15px;
   }
+  /* .about-img-container img {
+    border-radius: 3px;
+  } */
   .resume-btn {
     font-size: 1.5rem;
   }
@@ -544,12 +614,16 @@ footer img:hover {
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
+  .portpage {
+    padding-bottom: 40px;
+  }
   .portpage h2 {
     font-size: 3.25rem;
     padding: 30px;
   }
   .portpage h3 {
     font-size: 1.25rem;
+    margin-bottom: 0;
   }
   .portpage-content {
     max-width: 1350px;
@@ -567,6 +641,7 @@ footer img:hover {
     width: 100%; 
     position: relative;
     box-shadow: 0px 4px 10px black;
+    border-radius: 3px;
     transition: opacity 0.2s;
   }
   .project img:hover {
@@ -578,6 +653,7 @@ footer img:hover {
     /* width: 85%; */
     margin: 0 auto;
     position: relative;
+    border-radius: 3px;
     transition: background-color 0.2s;
   }
   .dim-layer:hover {
@@ -612,5 +688,50 @@ footer img:hover {
   .project-img-container img {
     max-width: 100%;
   }
+
+}
+
+/* Breakpoint for about-me section photo resizing */
+@media only screen and (min-width: 1200px) {
+
+  /* WEBSITE ABOUT PAGE */
+
+  /* About-Me Styles */
+  .about-img-container {
+    width: 70%;
+  }
+
+
+}
+
+/* Breakpoint for portfolio page content sizing */
+@media only screen and (min-width: 1270px) {
+
+  /* WEBSITE PORTFOLIO PAGE */
+
+  /* Portfolio Page Styles */
+  .portpage-content {
+    max-width: 1080px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+/* Breakpoint for about-me section photo resizing */
+@media only screen and (min-width: 1400px) {
+
+  /* Header Styles */
+  /* header {
+    padding: 15px 200px;
+  } */
+
+  /* WEBSITE ABOUT PAGE */
+
+  /* About-Me Styles */
+  .about-img-container {
+    width: 50%;
+  }
+
 
 }

@@ -11,20 +11,21 @@
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   
   <body>
 
     <div class="content-wrap">
-      <header>
+      <header id="intro-header" class="transparent-background">
         <!-- <img src="" alt=""> -->
         <h1>Website Title</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <!-- <li><a href="portfolioPage.html">Portfolio</a></li> -->
             <li class="no-border-right no-padding-right"><a href="portfolioPage.html">Portfolio</a></li>
           </ul>
         </nav>
@@ -36,7 +37,7 @@
           <div class="container">
             <h2>Matthew Wiberg</h2>
             <p>Aspiring Front-End Developer</p>
-            <a href="#portfolio"><span class="material-icons md-48 md-light">keyboard_arrow_down</span></a>
+            <a href="#portfolio" id="arrow_link"><span class="material-icons md-48 md-light">keyboard_arrow_down</span></a>
           </div>
         </section>
         <section id="portfolio">
@@ -60,16 +61,24 @@
             <li><a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank"><img src="https://img.icons8.com/nolan/50/linkedin.png"/></a></li>
           </ul>
         </nav>
-        <small>&copy; 2021 Matthew Wiberg. All Rights Reserved.</small>
+
+        <ul id="icon-credit-list">
+          <li><a href="https://icons8.com/icon/ihMzI7k32pJf/mail" target="_blank"><small><span class="icon-credit-link">Mail icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
+          <li><a href="https://icons8.com/icon/52539/github" target="_blank"><small><span class="icon-credit-link">GitHub icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
+          <li><a href="https://icons8.com/icon/44019/linkedin" target="_blank"><small><span class="icon-credit-link">LinkedIn icon by Icons8</span></small></a></li>
+        </ul>
+
+        <small id="copyright">&copy; 2021 Matthew Wiberg. All Rights Reserved.</small>
+
+        
         <!-- <a href="https://icons8.com/icon/baRhMh2wmjbT/mail">Mail icon by Icons8</a> -->
         <!-- <a href="https://icons8.com/icon/12598/github">GitHub icon by Icons8</a> -->
         <!-- <a href="https://icons8.com/icon/447/linkedin">LinkedIn icon by Icons8</a> -->
 
-        <!-- <a href="https://icons8.com/icon/ihMzI7k32pJf/mail">Mail icon by Icons8</a>
-        <a href="https://icons8.com/icon/52539/github">GitHub icon by Icons8</a>
-        <a href="https://icons8.com/icon/44019/linkedin">LinkedIn icon by Icons8</a> -->
       </footer>
     </div>
     
+    <script src="Scripts/headerScroll.js"></script>
+
   </body>
 </html>
