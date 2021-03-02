@@ -6,7 +6,7 @@
 * [Status](#status)
 
 ## General info
-This project is intented to act as a portfolio to hold information about the suthor and projects created by him.
+This project was created to practice making a website with HTML, CSS and JavaScript as well as to hold information about the author and his portfolio.
 	
 ## Technologies
 Project is created with:
