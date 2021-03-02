@@ -256,9 +256,20 @@ header a {
   width: 100%;
   padding: 15px;
 }
+.project-text p {
+  margin-top: 10px;
+}
 .project-text li {
   margin-top: 10px;
   list-style-type: none;
+}
+.project-link {
+  color: black;
+  text-decoration: underline;
+  transition: opacity 0.25s;
+}
+.project-link:hover {
+  opacity: 0.5;
 }
 .project-img-container {
   width: 100%;
@@ -400,6 +411,9 @@ footer small {
   .project-img-container {
     width: 90%;
     padding: 0 15px;
+  }
+  .project-img-container img {
+    border-radius: 3px;
   }
   .project-text {
     width: 90%;
@@ -565,10 +579,6 @@ footer small {
     background-color: white;
     display: block;
   }
-  /* #portfolio .container {
-    position: relative;
-    top: 15px;
-  } */
 
 
   /* WEBSITE ABOUT PAGE */
@@ -640,9 +650,6 @@ footer small {
     width: 90%;
     padding: 15px;
   }
-  /* .about-img-container img {
-    border-radius: 3px;
-  } */
   .resume-btn {
     font-size: 1.5rem;
   }
@@ -695,6 +702,18 @@ footer small {
   .dim-layer:hover {
     background-color: black;
   }
+  .brighten-layer {
+    height: 210px;
+    width: 270px;
+    /* width: 85%; */
+    margin: 0 auto;
+    position: relative;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+  }
+  .brighten-layer:hover {
+    background-color: white;
+  }
 
   /* Project-Pages Styles */
   .project-page {
@@ -737,7 +756,6 @@ footer small {
     width: 70%;
   }
 
-
 }
 
 /* Breakpoint for portfolio page content sizing */
@@ -768,6 +786,5 @@ footer small {
   .about-img-container {
     width: 50%;
   }
-
 
 }
