@@ -178,10 +178,10 @@ header a {
   margin-top: 10px;
   list-style-type: none;
 }
-/* .about-me-p {
+.about-me-p {
   margin-bottom: 16px;
-  line-height: 2.25;
-} */
+  line-height: 1.915;
+}
 .about-img-container {
   width: 100%;
 }
@@ -218,11 +218,30 @@ header a {
 .about-me-nav a:active {
   color: hsla(0,0%,20%,1);
 }
-.about-me-status {
-  display: flex;
+.about-me-hobbies {
+  flex-direction: column;
 }
-.about-me-status-text {
+.about-me-hobby img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.about-me-status-text,
+.about-me-hobbies-text,
+.about-me-hobby,
+.about-me-skills-icons,
+.about-me-contact-text {
   padding: 15px;
+}
+.about-me-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.skills-icons {
+  width: 75px;
+}
+.about-me-contact-list {
+  list-style-type: none;
 }
 .resume-btn {
   width: auto;
@@ -422,10 +441,21 @@ footer small {
   .about-me-nav ul {
     width: 90%;
   }
-  .about-me-status {
+  .about-me-status,
+  .about-me-hobbies,
+  .about-me-skills,
+  .about-me-contact {
+    display: flex;
     justify-content: center;
   }
-  .about-me-status-text {
+  .about-me-hobbies {
+    align-items: center;
+  }
+  .about-me-status-text,
+  .about-me-hobbies-text,
+  .about-me-hobby,
+  .about-me-skills-icons,
+  .about-me-contact-text {
     width: 90%;
   }
 
@@ -477,6 +507,14 @@ footer small {
     display: inline;
     color: gray;
     font-size: 0.75rem;
+  }
+
+
+  /* WEBSITE ABOUT PAGE */
+  
+  /* About-Me Styles */
+  .skills-icons {
+    margin-right: 30px;
   }
 
 }
@@ -634,8 +672,30 @@ footer small {
   .about-me-nav ul {
     width: 85%;
   }
-  .about-me-status-text {
+  .about-me-status-text,
+  .about-me-hobbies-text,
+  .about-me-skills-icons,
+  .about-me-contact-text {
     width: 85%;
+  }
+  .about-me-hobby {
+    width: 85%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .about-me-hobby img {
+    margin: 0;
+  }
+  .hobby-img-container {
+    width: 35%;
+    margin-right: 50px;
+  }
+  .hobby-text {
+    width: 65%;
+  }
+  .skills-icons {
+    margin-right: 50px;
   }
 
   /* WEBSITE PORTFOLIO PAGE */
@@ -703,11 +763,28 @@ footer small {
     width: 90%;
     padding: 15px;
   }
-  .about-me-status h3 {
+  .about-me-hobbies {
+    margin-top: 50px;
+  }
+  .about-me-status h3,
+  .about-me-hobbies h3,
+  .about-me-skills h3,
+  .about-me-contact h3 {
     text-align: center;
   }
-  .about-me-status-text {
+  .about-me-status-text,
+  .about-me-hobbies-text {
     width: 65%;
+  }
+  .about-me-skills-list {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-icons {
+    margin: 0 50px 0 50px;
+  }
+  .about-me-contact-text {
+    text-align: center;
   }
   .resume-btn {
     font-size: 1.5rem;
@@ -815,6 +892,9 @@ footer small {
   .about-img-container {
     width: 70%;
   }
+  .about-me-hobby {
+    width: 70%;
+  }
 
 }
 
@@ -864,10 +944,16 @@ footer small {
 
   /* About-Me Styles */
   .about-img-container {
-    width: 50%;
+    width: 65%;
   }
   .about-me-status-text {
     width: 50%;
+  }
+  .about-me-hobbies-text {
+    width: 50%;
+  }
+  .about-me-hobby {
+    width: 60%;
   }
 
 }
