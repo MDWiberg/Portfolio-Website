@@ -1,5 +1,5 @@
 /* 
-  Portfolio Project Stylesheet - index.html
+  Portfolio Project Stylesheet
   Author: Matthew Wiberg 
 */
 
@@ -13,14 +13,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
   /* Disable smooth scrolling when users have prefers-reduced-motion enabled */
   @media screen and (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
     }
   }
-
 body {
   height: 100%;
   width: 100%;
@@ -61,7 +59,6 @@ p {
 .no-padding-right {
   padding-right: 0;
 }
-
 
 /* Header Styles */
 header {
@@ -118,12 +115,10 @@ header a {
 #introduction a {
   display: none;
 }
-/* ------------------------------- */
 #introduction .container {
   color: white;
   background-color: darkgray;
 }
-
 
 /* Portfolio Styles */
 #portfolio img {
@@ -142,7 +137,6 @@ header a {
   background-color: black;
   display: block;
 }
-
 
 
 /* WEBSITE ABOUT PAGE */
@@ -184,11 +178,51 @@ header a {
   margin-top: 10px;
   list-style-type: none;
 }
+/* .about-me-p {
+  margin-bottom: 16px;
+  line-height: 2.25;
+} */
 .about-img-container {
   width: 100%;
 }
 .about-img-container img {
   max-width: 100%;
+}
+.about-me-nav{
+  position: sticky;
+}
+.about-me-nav ul {
+  height: 40px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: flex;
+}
+.about-me-nav li {
+  height: 100%;
+  width: 25%;
+  list-style-type: none;
+}
+.about-me-nav a {
+  height: 100%;
+  width: 100%;
+  color: hsla(0,0%,50%,1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.25s;
+}
+.about-me-nav a:hover {
+  color: hsla(0,0%,20%,1);
+}
+.about-me-nav a:active {
+  color: hsla(0,0%,20%,1);
+}
+.about-me-status {
+  display: flex;
+}
+.about-me-status-text {
+  padding: 15px;
 }
 .resume-btn {
   width: auto;
@@ -199,9 +233,6 @@ header a {
   font-weight: bold;
   line-height: 1.5;
 }
-
-
-
 
 
 /* WEBSITE PORTFOLIO PAGE */
@@ -229,7 +260,6 @@ header a {
 .portpage-text-container {
     padding: 15px;
 }
-
 
 /* Project-Pages Styles */
 .project-page {
@@ -278,7 +308,6 @@ header a {
   max-width: 100%;
 }
 
-
 /* Footer Styles */
 footer {
   width: 100%;
@@ -322,10 +351,6 @@ footer small {
 
 
 
-
-
-
-
 /* ------ MEDIA QUERIES ------ */
 
 @media only screen and (min-width: 480px) {
@@ -342,8 +367,11 @@ footer small {
   }
   .content-wrap {
     min-height: 100%;
-    padding-bottom: 197px;
+    padding-bottom: 202px; /* 202px min so footer does not overlap */
     position: relative;
+  }
+  .about-c-wrap {
+    padding-bottom: 215px; /* 202px min so footer does not overlap */
   }
 
   /* Header Styles */
@@ -353,7 +381,6 @@ footer small {
   /* WEBSITE INTRODUCTION PAGE */
 
   /* Introduction Styles */
-
   #introduction img {
     width: 90%;
     padding: 40px 15px 0 15px;
@@ -366,7 +393,6 @@ footer small {
   }
 
   /* Portfolio Styles */
-
   #portfolio img {
     width: 90%;
     padding: 0 15px;
@@ -393,8 +419,16 @@ footer small {
   .about-text {
     width: 90%;
   }
+  .about-me-nav ul {
+    width: 90%;
+  }
+  .about-me-status {
+    justify-content: center;
+  }
+  .about-me-status-text {
+    width: 90%;
+  }
 
-  
 
   /* WEBSITE PORTFOLIO PAGE */
 
@@ -426,7 +460,10 @@ footer small {
 
   /* General Styles */
   .content-wrap {
-    padding-bottom: 157px;
+    padding-bottom: 159px;  /* 159px min so footer does not overlap */
+  }
+  .about-c-wrap {
+    padding-bottom: 172px;
   }
 
   /* Footer Styles */
@@ -462,7 +499,10 @@ footer small {
     background-color: transparent;
   }
   .content-wrap {
-    display: block;
+    padding-bottom: 159px;  /* 159px min so footer does not overlap */
+  }
+  .about-c-wrap {
+    padding-bottom: 180px;
   }
 
   /* Header Styles */
@@ -591,6 +631,12 @@ footer small {
   .about-text {
     width: 85%;
   }
+  .about-me-nav ul {
+    width: 85%;
+  }
+  .about-me-status-text {
+    width: 85%;
+  }
 
   /* WEBSITE PORTFOLIO PAGE */
 
@@ -609,6 +655,12 @@ footer small {
 
   /* Universal Styles */
   /* General Styles */
+  .content-wrap {
+    padding-bottom: 159px;  /* 159px min so footer does not overlap */
+  }
+  .about-c-wrap {
+    padding-bottom: 190px;
+  }
   /* Header Styles */
   /* header {
     padding: 30px 60px;
@@ -626,9 +678,9 @@ footer small {
   /* WEBSITE ABOUT PAGE */
 
   /* About-Me Styles */
-  .about-me {
+  /* .about-me {
     align-items: center;
-  }
+  } */
   .about-me h2 {
     padding: 30px;
     font-size: 3.25rem;
@@ -640,6 +692,7 @@ footer small {
   .about-me-content {
     max-width: 1400px;
     width: 90%; 
+    margin: 0 auto;
     flex-direction: row;
     align-items: flex-start;
   }
@@ -650,9 +703,16 @@ footer small {
     width: 90%;
     padding: 15px;
   }
+  .about-me-status h3 {
+    text-align: center;
+  }
+  .about-me-status-text {
+    width: 65%;
+  }
   .resume-btn {
     font-size: 1.5rem;
   }
+
 
   /* WEBSITE PORTFOLIO PAGE */
 
@@ -761,6 +821,26 @@ footer small {
 /* Breakpoint for portfolio page content sizing */
 @media only screen and (min-width: 1270px) {
 
+  /* General Styles */
+  .content-wrap {
+    padding-bottom: 159px;  /* 159px min so footer does not overlap */
+  }
+  .about-c-wrap {
+    padding-bottom: 210px; 
+  }
+
+  /* WEBSITE ABOUT PAGE */
+
+  /* About-Me Styles */
+  .about-me-nav ul {
+    width: 80%;
+    margin: 65px auto;
+    justify-content: space-evenly;
+  }
+  .about-me-nav li {
+    width: 7.5%;
+  }
+
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
@@ -784,6 +864,9 @@ footer small {
 
   /* About-Me Styles */
   .about-img-container {
+    width: 50%;
+  }
+  .about-me-status-text {
     width: 50%;
   }
 
