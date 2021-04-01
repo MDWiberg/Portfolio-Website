@@ -11,16 +11,18 @@
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="Scripts/aboutNavScroll.js" defer></script>
     <script src="Scripts/handleCleanRefresh.js" defer></script>
+    <script src="Scripts/handleInternalLinking.js" defer></script>
   </head>
 
   <body>
     
     <div class="content-wrap about-c-wrap">
       <header>
-        <!-- <img src="" alt=""> -->
+        <!-- <img src="Images/mWLogo2.jpg" alt=""> -->
         <h1>Website Title</h1>
         <nav>
           <ul>
@@ -41,7 +43,7 @@
             <div class="about-me-content">
               <div class="about-text">
                 <h3 id="top-header">Who am I?</h3>
-                <p class="about-me-p">	 
+                <p class="about-intro-text-medium about-me-p">	 
                   Hi, I'm Matthew Wiberg, programmer, athlete and baked-goods-enthusiast. 
                 </p>
                 <p class="about-me-p">
@@ -60,10 +62,10 @@
 
           <nav class="about-me-nav">
             <ul>
-              <li><a href="#status">Status</a></li>
-              <li><a href="#hobbies">Hobbies</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a id="statusLink" href="#status">Status</a></li>
+              <li><a id="hobbiesLink" href="#hobbies">Hobbies</a></li>
+              <li><a id="contactLink" href="#contact">Contact</a></li>
+              <li><a id="skillsLink" href="#skills">Skills</a></li>
             </ul>
           </nav>
 
@@ -81,10 +83,10 @@
                 Over the past few years in school and recent time as a graduate, I have been strengthening my skills by working on school projects as well as learning new languages and applying them to new projects outside of the classroom. 
               </p>
               <p class="about-me-p">
-                I have always enjoyed building, analyzing and working with numbers, which is why I hope to have a future career in software development. 
+                Working with numbers and analyzing them has always been an interest to me, which is why I hope to have a future career in software development. 
               </p>
               <p class="about-me-p">
-                I am hoping to get an internship or entry-level job to start applying my skills and gaining experience in a professional work environment. 
+                I am hoping to get an internship or entry-level job to apply my skills and gain experience in a professional work environment. 
               </p>
             </div>
           </div>
@@ -92,7 +94,7 @@
           <div id="hobbies" class="about-me-hobbies">
             <div class="about-me-hobbies-text">
               <h3>What do I enjoy?</h3>
-              <p>
+              <p class="about-me-p">
                 When I'm not programming, I enjoy spending my time playing soccer and tennis, working out, looking at new computer parts, or picking out a delicious pastry. 
               </p>
             </div>
@@ -100,8 +102,8 @@
               <div class="hobby-img-container">
                 <img src="Images/avatar.jpg" alt="">
               </div>
-              <p class="hobby-text">
-                Sports have always been an important part of my life since a young age, specifically soccer which I played throughout college. 
+              <p class="hobby-text about-me-p">
+                Sports have always been an important part of my life since a young age, specifically soccer, which I played throughout college. 
                 Now I play soccer occasionally for fun and also picked up tennis as a new hobby.
               </p>
             </div>
@@ -109,16 +111,16 @@
               <div class="hobby-img-container">
                 <img src="Images/avatar.jpg" alt="">
               </div>
-              <p class="hobby-text">
+              <p class="hobby-text about-me-p">
                 Working out became one of my favorite things to do since I started my freshman year in college. 
-                Going to the gym and being able to gain strength and essientially "upgrade" yourself is something that feels amazing and keeps me motivated to continue. 
+                Going to the gym and being able to gain strength and essentially "upgrade" yourself is something that feels amazing and keeps me motivated to continue. 
               </p>
             </div>
             <div class="about-me-hobby">
               <div class="hobby-img-container">
                 <img src="Images/avatar.jpg" alt="">
               </div>
-              <p class="hobby-text">
+              <p class="hobby-text about-me-p">
                 Computers really peaked my interest once I began playing around with more graphical-demanding video games.  
                 I recently ended up researching and buying all the parts I needed to build my first pc and I do not regret it one bit.
               </p>
@@ -127,10 +129,30 @@
               <div class="hobby-img-container">
                 <img src="Images/avatar.jpg" alt="">
               </div>
-              <p class="hobby-text">
-                I have grown a scary sweet-tooth for baked goods, so much in fact that it's almost insatiable, especially when it comes to cherry pie.
+              <p class="hobby-text about-me-p">
+                My love for baked goods has grown so much over the years, it has produced quite the sweet-tooth in me. If I had to pick a favorite, cherry pie would take the cake.
               </p>
             </div>
+          </div>
+
+          <div id="contact" class="about-me-contact">
+            
+            <div class="about-me-contact-text">
+              <h3>Contact</h3>
+              <p class="about-me-contact-desc about-me-p">
+                Want to get in touch with me? Contact me at <em>540-845-6170</em> or <a href="mailto:mdwiberg@vwu.edu" class="about-contact-link"><em>mdwiberg@vwu.edu</em></a>. 
+                Feel free to also checkout my <a href="https://github.com/MDWiberg" target="_blank" class="about-contact-link"><em>Github</em></a> and <a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank" class="about-contact-link"><em>LinkedIn</em></a>, or my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a>.
+              </p>
+              
+              <ul class="about-me-contact-list">
+                <li><address>540-845-6170</address></li>
+                <li><a href="mailto:mdwiberg@vwu.edu" class="about-contact-link"><em>mdwiberg@vwu.edu</em></a></li>
+                <li>View my <a href="https://github.com/MDWiberg" target="_blank" class="about-contact-link"><em>Github</em></a></li>
+                <li>View my <a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank" class="about-contact-link"><em>LinkedIn</em></a></li>
+                <li>View my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a></li>
+              </ul> 
+            </div>
+
           </div>
 
           <div id="skills" class="about-me-skills">
@@ -171,29 +193,6 @@
             </div>
           </div>
 
-          <div id="contact" class="about-me-contact">
-            <div class="about-me-contact-text">
-              <h3>Contact</h3>
-              <p>Feel free to get in touch with me at my email mdwiberg@vwu.edu. </p>
-              <ul class="about-me-contact-list">
-                <li><address>540-845-6170</address></li>
-                <li><address>mdwiberg@vwu.edu</address></li>
-                <li>View my <a href="https://github.com/MDWiberg" target="_blank" class="about-contact-link"><em>Github</em></a></li>
-                <li>View my <a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank" class="about-contact-link"><em>LinkedIn</em></a></li>
-                <li>View my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a></li>
-              </ul> 
-            </div>
-
-            <!-- <h3>Contact</h3>
-            <ul>
-              <li><address>540-845-6170</address></li>
-              <li><address>mdwiberg@vwu.edu</address></li>
-              <li>View my <a href="https://github.com/MDWiberg" target="_blank" class="about-contact-link"><em>Github</em></a></li>
-              <li>View my <a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank" class="about-contact-link"><em>LinkedIn</em></a></li>
-              <li>View my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a></li>
-            </ul>  -->
-          </div>
-
         </section>
 
       </main>
@@ -214,7 +213,7 @@
           <li><a href="https://icons8.com/icon/44019/linkedin" target="_blank"><small><span class="icon-credit-link">LinkedIn icon by Icons8</span></small></a></li>
         </ul>
 
-        <small id="copyright">&copy; 2021 Matthew Wiberg. All Rights Reserved.</small>
+        <small id="copyright">&copy; 2021 Matthew Wiberg</small>
 
       </footer>
     </div>
