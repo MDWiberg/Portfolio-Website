@@ -12,15 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Scripts/headerMenu.js" defer></script>
   </head>
 
   <body>
 
     <div class="content-wrap about-c-wrap">
       <header>
-        <!-- <img src="" alt=""> -->
-        <h1>Website Title</h1>
-        <nav>
+        <div class="header-img-container">
+          <img src="Images/mWLogoAttempt5.webp" alt="">
+          <img src="Images/menuPic1.svg" alt="" class="hamburger-icon">
+        </div>
+        <!-- <h1>Website Title</h1> -->
+        <nav class="header-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -37,8 +41,11 @@
             <div class="project-text">
               <h3 id="top-header">Description</h3>
               <p>The goal of this program is to allow a user to input a field size (n x m), and then traverse the field to find their hat (^) to win the game.</p>
-              <p>The user moves by entering up, u, left, right, down or their fiest letters respectively (case insensitive).</p>
-              <p>A player wins the game by moving the starting path character (*) to the hat and loses by falling in a hole (O) or moving off the field.</p>
+              <p>
+                The user moves by entering up, u, left, right, down or their first letters respectively (case insensitive). 
+                A user wins the game by moving the starting path character (*) to the hat or loses by falling in a hole (O) or moving off the field.
+              </p>
+              <p>This project's main focus using and running Javascript in a server enviroment rather than a client-side environment</p>
               <p>View source <a href="https://github.com/MDWiberg/Find-Your-Hat-Game" target="_blank" class="project-link"><em>code.</em></a></p>
               <h3>Languages</h3>
               <ul>
@@ -49,7 +56,7 @@
               </ul>
             </div>
             <div class="project-img-container">
-              <img src="Images/findYourHatGameScreenShot3.png" alt="screenshot of the terminal running the Find Your Hat Game source code" aria-label="credit card project picture">
+              <img src="Images/findYourHatGameScreenShot3.png" alt="screenshot of the terminal running the find your hat game source code" aria-label="find your hat game project picture">
             </div>
           </div>
         </section>

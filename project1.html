@@ -12,15 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Scripts/headerMenu.js" defer></script>
   </head>
 
   <body>
 
     <div class="content-wrap about-c-wrap">
       <header>
-        <!-- <img src="" alt=""> -->
-        <h1>Website Title</h1>
-        <nav>
+        <div class="header-img-container">
+          <img src="Images/mWLogoAttempt5.webp" alt="">
+          <img src="Images/menuPic1.svg" alt="" class="hamburger-icon">
+        </div>
+        <!-- <h1>Website Title</h1> -->
+        <nav class="header-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -36,15 +40,9 @@
           <div class="project-content">
             <div class="project-text">
               <h3 id="top-header">Description</h3>
-              <p>
-                The goal of this web app is to fetch the weather forecast of a specified city for the current and following five days.
-              </p>
-              <p> 
-                This project was created using HTML, CSS and JavaScript and focuses on using the Fetch API alongside the OpenWeatherData API.
-              </p> 
-              <p>
-                The city input is used as the query parameter for API endpoint to return the current and five day weather forecast.  
-              </p>
+              <p>The goal of this web app is to fetch the weather forecast of a specified city for the current and following five days.</p>
+              <p>The city input is used as the query parameter for API endpoint to return the current and five day weather forecast.</p>
+              <p>This project's main focus was using the Fetch API alongside the OpenWeatherData API to practice using API's.</p> 
               <p>View source <a href="https://github.com/MDWiberg/Weather-Forecast" target="_blank" class="project-link"><em>code</em></a>.</p>
               <h3>Languages</h3>
               <ul>
@@ -69,7 +67,8 @@
               </ul>
             </div>
             <div class="project-img-container">
-              <img src="Images/weatherForecastScreenshot1.png" alt="screenshot of the weather forecast app" aria-label="credit card project picture">
+              <img src="Images/weatherForecastScreenshot1.png" alt="screenshot of the weather forecast app" aria-label="weather forecast project picture">
+              <!-- <iframe src="../../Random_Projects/weather_forecast/index.html"></iframe> -->
             </div>
           </div>
         </section>

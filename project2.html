@@ -12,15 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Scripts/headerMenu.js" defer></script>
   </head>
 
   <body>
 
     <div class="content-wrap about-c-wrap">
       <header>
-        <!-- <img src="" alt=""> -->
-        <h1>Website Title</h1>
-        <nav>
+        <div class="header-img-container">
+          <img src="Images/mWLogoAttempt5.webp" alt="">
+          <img src="Images/menuPic1.svg" alt="" class="hamburger-icon">
+        </div>
+        <!-- <h1>Website Title</h1> -->
+        <nav class="header-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -36,15 +40,9 @@
           <div class="project-content">
             <div class="project-text">
               <h3 id="top-header">Description</h3>
-              <p>
-                The goal of this web app is to recieve an input from a user to check if the credit/debit card number they input is valid or not.
-              </p>
-              <p>
-                The credit card company (Amex, Discover, MasterCard, Visa or otherwise unknown) is reported regardless if the card number is valid or not.
-              </p> 
-              <p>
-                This project was created using HTML, CSS and JavaScript and focuses on integrating JavaScript to bring functionality to the HTML page.  
-              </p>
+              <p>The goal of this web app is to recieve an input credit/debit card number from a user to check if the number they input is valid or not.</p>
+              <p>The credit card company (Amex, Discover, MasterCard, Visa or otherwise unknown) is reported regardless if the card number is valid or not.</p> 
+              <p>This project's main focus was to practice integrating JavaScript to give functionality to an otherwise static HTML page.</p>
               <p>View source <a href="https://github.com/MDWiberg/Credit-Card-Validator" target="_blank" class="project-link"><em>code</em>.</a></p>
               <h3>Languages</h3>
               <ul>
@@ -70,6 +68,8 @@
             </div>
             <div class="project-img-container">
               <img src="Images/creditCardScreenshot3.png" alt="screenshot of the credit card validator" aria-label="credit card project picture">
+              <!-- <iframe src="../../Random_Projects/credit_card_form/index.html"></iframe> -->
+              <!-- http://localhost:8080/ -->
             </div>
           </div>
         </section>
