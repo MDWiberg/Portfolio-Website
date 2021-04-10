@@ -9,6 +9,8 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="Styles/reset.css">
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,12 +20,12 @@
   <body>
 
     <div class="content-wrap about-c-wrap">
+
       <header>
         <div class="header-img-container">
-          <img src="Images/mWLogoAttempt5.webp" alt="">
-          <img src="Images/menuPic1.svg" alt="" class="hamburger-icon">
+          <img src="Images/mWLogo1.webp" alt="website logo made of letters m and w mixed together">
+          <img src="Images/menuPic1.svg" alt="three line menu icon" aria-label="hamburger menu icon iamge used as button" class="hamburger-icon">
         </div>
-        <!-- <h1>Website Title</h1> -->
         <nav class="header-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -34,12 +36,11 @@
       </header>
 
       <main>
-
         <section class="project-page">
-          <h2>Find Your Hat Game</h2>
+          <h1>Find Your Hat Game</h1>
           <div class="project-content">
-            <div class="project-text">
-              <h3 id="top-header">Description</h3>
+            <div class="project-text container">
+              <h2 id="top-header">Description</h2>
               <p>The goal of this program is to allow a user to input a field size (n x m), and then traverse the field to find their hat (^) to win the game.</p>
               <p>
                 The user moves by entering up, u, left, right, down or their first letters respectively (case insensitive). 
@@ -47,7 +48,7 @@
               </p>
               <p>This project's main focus using and running Javascript in a server enviroment rather than a client-side environment</p>
               <p>View source <a href="https://github.com/MDWiberg/Find-Your-Hat-Game" target="_blank" class="project-link"><em>code.</em></a></p>
-              <h3>Languages</h3>
+              <h2>Languages</h2>
               <ul>
                 <li class="language-icons"><svg viewBox="0 0 128 128">
                   <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185h-125.184z"></path>
@@ -56,31 +57,28 @@
               </ul>
             </div>
             <div class="project-img-container">
-              <img src="Images/findYourHatGameScreenShot3.png" alt="screenshot of the terminal running the find your hat game source code" aria-label="find your hat game project picture">
+              <img src="Images/findYourHatGameScreenShot1.png" alt="screenshot of a terminal running the find your hat game">
             </div>
           </div>
         </section>
-
       </main>
 
       <footer class="bottom-footer">
         <nav>
           <ul>
-            <li><a href="mailto:mdwiberg@vwu.edu"><img src="https://img.icons8.com/nolan/50/apple-mail.png"/></a></li>
-            <li><a href="https://github.com/MDWiberg" target="_blank"><img src="https://img.icons8.com/nolan/50/github.png"/></a></li>
-            <li><a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank"><img src="https://img.icons8.com/nolan/50/linkedin.png"/></a></li>
+            <li><a href="mailto:mdwiberg@vwu.edu"><img src="https://img.icons8.com/nolan/50/apple-mail.png" alt="mail icon"/></a></li>
+            <li><a href="https://github.com/MDWiberg" target="_blank"><img src="https://img.icons8.com/nolan/50/github.png" alt="github icon"/></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank"><img src="https://img.icons8.com/nolan/50/linkedin.png" alt="linkedin icon"/></a></li>
           </ul>
         </nav>
-
         <ul id="icon-credit-list">
           <li><a href="https://icons8.com/icon/ihMzI7k32pJf/mail" target="_blank"><small><span class="icon-credit-link">Mail icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
           <li><a href="https://icons8.com/icon/52539/github" target="_blank"><small><span class="icon-credit-link">GitHub icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
           <li><a href="https://icons8.com/icon/44019/linkedin" target="_blank"><small><span class="icon-credit-link">LinkedIn icon by Icons8</span></small></a></li>
         </ul>
-
         <small id="copyright">&copy; 2021 Matthew Wiberg</small>
-
       </footer>
+      
     </div>
     
   </body>

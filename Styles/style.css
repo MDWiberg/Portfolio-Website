@@ -25,6 +25,8 @@ body {
   font-family: "Verdana", sans-serif;
   /* font-family: 'Trispace', sans-serif; */
   /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Kumbh Sans', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
   color: white;
 }
 main {
@@ -46,10 +48,6 @@ p {
 /* General Styles */
 .container {
   padding: 15px;
-}
-.container p {
-  width: 90%;
-  margin: 0 auto;
 }
 .no-border-right {
   border-right: none;
@@ -83,7 +81,6 @@ header ul {
 header li {
   height: 100%;
   width: 33.33%;
-  color: black;
   list-style-type: none;
   border-top: 3px solid white;
   border-right: 3px solid white;
@@ -118,11 +115,9 @@ header img {
 /* Introduction and Portfolio Styles */
 #introduction,
 #quote {
-  /* line-height: 1.5; */
   text-align: center;
 }
-#introduction h2,
-#quote h2 {
+#introduction h1 {
   margin-bottom: 10px;
 }
 
@@ -134,10 +129,14 @@ header img {
   display: none;
 }
 .intro-text {
-  padding: 15px;
   line-height: 1.75;
   z-index: 1
 }
+.intro-text p {
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 /* Quote Styles */
 #quote img {
@@ -154,9 +153,11 @@ header img {
   display: block;
 }
 .quote-text {
-  padding: 15px;
   line-height: 1.75;
-  z-index: 1
+}
+.quote-text p {
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -164,15 +165,13 @@ header img {
 
 /* About-Me Styles */
 .about-me {
-  display: flex;
-  flex-direction: column;
   line-height: 1.5;
 }
-.about-me h2 {
+.about-me h1 {
   padding: 15px;
   text-align: center;
 }
-.about-me h3 {
+.about-me h2 {
   margin: 15px 0;
 }
 #top-header {
@@ -191,10 +190,6 @@ header img {
 .about-contact-link:hover {
   opacity: 0.5;
 }
-.about-text {
-  width: 100%;
-  padding: 15px;
-}
 .about-text li {
   margin-top: 10px;
   list-style-type: none;
@@ -202,9 +197,6 @@ header img {
 .about-me-p {
   margin-bottom: 30px;
   line-height: 1.915;
-}
-.about-img-container {
-  width: 100%;
 }
 .about-img-container img {
   max-width: 100%;
@@ -215,26 +207,13 @@ header img {
   top: 0;
   background-color: white;
 }
-/* .about-me-nav::after {
-  display: block;
-  background-position: center bottom;
-  position: relative;
-  content: '';
-  width: 0px;
-  height: 1px;
-  background-color: gray;
-  transition: all 0.3s;
-} */
-/* --------------- Fix underline for nav above */
 .about-me-nav ul {
   height: 70px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
 }
 .about-me-nav li {
-  height: 100%;
   width: 25%;
   list-style-type: none;
 }
@@ -242,6 +221,7 @@ header img {
   height: 100%;
   width: 100%;
   color: hsla(0,0%,50%,1);
+  font-weight: bold;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -259,13 +239,6 @@ header img {
 .about-me-hobby img {
   max-width: 100%;
   margin-bottom: 15px;
-}
-.about-me-status-text,
-.about-me-hobbies-text,
-.about-me-hobby,
-.about-me-skills-icons,
-.about-me-contact-text {
-  padding: 15px;
 }
 .about-me-skills-list {
   display: flex;
@@ -308,20 +281,14 @@ header img {
   line-height: 1.5;
   text-align: center;
 }
-.portpage h2 {
+.portpage h1 {
   padding: 15px;
 }
-.portpage h3 {
+.portpage h2 {
   margin-bottom: 5px;
-}
-.portpage a {
-  color: black;
 }
 .portpage-content img {
   max-width: 100%;
-}
-.portpage-text-container {
-    padding: 15px;
 }
 
 /* Project-Pages Styles */
@@ -330,11 +297,11 @@ header img {
   flex-direction: column;
   line-height: 1.5;
 }
-.project-page h2 {
+.project-page h1 {
   padding: 15px;
   text-align: center;
 }
-.project-page h3 {
+.project-page h2 {
   margin: 15px 0;
 }
 .project-page p {
@@ -344,10 +311,6 @@ header img {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-}
-.project-text {
-  width: 100%;
-  padding: 15px;
 }
 .project-text p {
   margin-top: 10px;
@@ -371,9 +334,6 @@ header img {
 }
 .project-link:hover {
   opacity: 0.5;
-}
-.project-img-container {
-  width: 100%;
 }
 .project-img-container img {
   max-width: 100%;
@@ -432,7 +392,7 @@ footer small {
 @media only screen and (min-width: 480px) {
 
   /* Universal Styles */
-  h2 {
+  h1 {
     font-size: 1.75rem;
   }
 
@@ -464,17 +424,12 @@ footer small {
   #introduction .container {
     width: 90%;
     margin: 0 auto;
-    color: black;
-    background-color: transparent;
   }
 
   /* Quote Styles */
   #quote img {
     width: 90%;
     padding: 0 15px;
-  }
-  #quote h2 {
-    margin-bottom: 10px;
   }
   #quote .container {
     width: 90%;
@@ -520,7 +475,7 @@ footer small {
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
-  .portpage h3 {
+  .portpage h2 {
     font-size: 1.25rem;
   }
   .portpage-content {
@@ -547,6 +502,14 @@ footer small {
 
 /* Breakpoint for footer list containing the links that credit the icons used */
 @media only screen and (min-width: 592px) {
+
+  /* General Styles */
+  .content-wrap {
+    padding-bottom: 158px;  /* 158px min so footer does not overlap */
+  }
+  .about-c-wrap {
+    padding-bottom: 172px;
+  }
 
   /* Header Styles */
   header {
@@ -575,10 +538,6 @@ footer small {
   header li a:hover {
     color: rgba(255,255,255,0.5)
   }
-  #intro-header {
-    top: 0;
-    z-index: 3;
-  }
   header img {
     padding: 0;
   }
@@ -587,14 +546,6 @@ footer small {
   }
   .hamburger-icon {
     display: none;
-  }
-
-  /* General Styles */
-  .content-wrap {
-    padding-bottom: 159px;  /* 159px min so footer does not overlap */
-  }
-  .about-c-wrap {
-    padding-bottom: 172px;
   }
 
   /* Footer Styles */
@@ -627,7 +578,7 @@ footer small {
   .material-icons.md-light { color: rgba(255, 255, 255, 0.9); }
 
   /* Universal Styles */
-  h2 {
+  h1 {
     font-size: 2.25rem;
   }
   /* General Styles */
@@ -636,9 +587,6 @@ footer small {
   }
   .transparent-background {
     background-color: transparent;
-  }
-  .content-wrap {
-    padding-bottom: 159px;  /* 159px min so footer does not overlap */
   }
   .about-c-wrap {
     padding-bottom: 180px;
@@ -650,41 +598,8 @@ footer small {
   }
   #intro-header {
     position: fixed;
-  }
-  /* header {
-    padding: 20px 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header h1 {
-    padding: 0;
-  }
-  header li {
-    width: auto;
-    padding: 0 25px;
-    border: none;
-    font-size: 1.25rem;
-    background-color: transparent;
-  }
-  header li:active {
-    background-color: transparent;
-  }
-  header li a {
-    color: rgba(255,255,255,1.0);
-    transition: color 0.25s;
-  }
-  header li a:hover {
-    color: rgba(255,255,255,0.5)
-  }
-  #intro-header {
-    position: fixed;
-    top: 0;
     z-index: 3;
   }
-  header img {
-    padding: 0;
-  } */
   
 
   /* WEBSITE INTRODUCTION PAGE */
@@ -717,20 +632,20 @@ footer small {
     width: 100%;
     margin: 0;
   }
-  #introduction h2 {
+  #introduction h1 {
     margin-bottom: 15px;
     color: rgba(255,255,255, 0.9);
-    font-size: 3.25rem;
+    font-size: 3.75rem;
+    letter-spacing: 0.25rem;
     z-index: 2;
   }
   #introduction p {
     margin-bottom: 6%;
     color: rgba(255,255,255, 0.7);
-    z-index: 2;
+    font-size: 1.125rem; /* 18px */
   }
   #introduction a {
     display: inline;
-    z-index: 2;
   }
   #introduction span {
     color: rgba(255,255,255,0.7);
@@ -752,19 +667,17 @@ footer small {
     width: 100%;
     margin: 0;
   }
-  #quote h2,
   #quote p {
     color: white;
+    font-size: 1.125rem; /* 18px */
   }
   #quote hr {
     height: 3px;
     width: 65px;
     margin: 30px auto;
-    text-align: center;
     border: 1px solid white;
     border-radius: 3px;
     background-color: white;
-    display: block;
   }
 
 
@@ -780,14 +693,14 @@ footer small {
   .about-me-nav ul {
     width: 85%;
   }
-  .about-me-status h3,
-  .about-me-hobbies h3,
-  .about-me-skills h3,
-  .about-me-contact h3 {
+  .about-me-status h2,
+  .about-me-hobbies h2,
+  .about-me-skills h2,
+  .about-me-contact h2 {
     margin-bottom: 25px;
     text-align: center;
   }
-  .about-me-skills h3 {
+  .about-me-skills h2 {
     margin-bottom: 30px;
   }
   .about-me-status-text,
@@ -833,10 +746,11 @@ footer small {
     display: none;
   }
 
+
   /* WEBSITE PORTFOLIO PAGE */
 
   /* Portfolio Page Styles */
-  .portpage h3 {
+  .portpage h2 {
     font-size: 1.5rem;
   }
   .portpage-content {
@@ -849,11 +763,8 @@ footer small {
 
   /* Universal Styles */
   /* General Styles */
-  .content-wrap {
-    padding-bottom: 159px;  /* 159px min so footer does not overlap */
-  }
   .about-c-wrap {
-    padding-bottom: 190px;
+    padding-bottom: 190px; /* 159px min so footer does not overlap */
   }
   /* Header Styles */
   /* Footer Styles */
@@ -866,27 +777,29 @@ footer small {
     width: 50%;
   }
 
+
   /* WEBSITE ABOUT PAGE */
 
   /* About-Me Styles */
-  .about-me h2 {
+  .about-me h1 {
     padding: 30px;
     font-size: 3.25rem;
   }
-  .about-me h3 {
+  .about-me h2 {
     font-size: 2.5rem;
     font-weight: normal;
     margin-bottom: 40px;
   }
   .about-me-p {
     font-size: 17px;
+    /* font-size: 1.125rem; */
   }
   .about-me-content {
     max-width: 1400px;
     width: 90%; 
     margin: 0 auto;
     flex-direction: row;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   .about-text {
     width: 100%;
@@ -907,7 +820,7 @@ footer small {
   .about-me-hobby {
     margin-top: 30px;
   }
-  .about-me-skills h3 {
+  .about-me-skills h2 {
     margin-bottom: 45px;
   }
   .resume-btn {
@@ -921,11 +834,11 @@ footer small {
   .portpage {
     padding-bottom: 40px;
   }
-  .portpage h2 {
+  .portpage h1 {
     font-size: 3.25rem;
     padding: 30px;
   }
-  .portpage h3 {
+  .portpage h2 {
     font-size: 1.25rem;
     margin-bottom: 0;
   }
@@ -941,8 +854,6 @@ footer small {
   }
   .project img {
     height: 100%;
-    width: 100%; 
-    position: relative;
     box-shadow: 0px 4px 10px black;
     border-radius: 3px;
     transition: opacity 0.2s;
@@ -954,7 +865,6 @@ footer small {
     height: 210px;
     width: 270px;
     margin: 0 auto;
-    position: relative;
     border-radius: 3px;
     transition: background-color 0.2s;
   }
@@ -965,7 +875,6 @@ footer small {
     height: 210px;
     width: 270px;
     margin: 0 auto;
-    position: relative;
     border-radius: 3px;
     transition: background-color 0.2s;
   }
@@ -977,13 +886,13 @@ footer small {
   .project-page {
     align-items: center;
   }
-  .project-page h2 {
+  .project-page h1 {
     padding: 30px;
     font-size: 3.25rem;
   }
-  .project-page h3 {
+  .project-page h2 {
     margin: 15px 0;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
   .project-content {
     max-width: 1400px;
@@ -996,6 +905,7 @@ footer small {
   }
   .project-text p {
     font-size: 17px;
+    font-size: 1.125rem;
   }
   .project-link {
     color: firebrick;
@@ -1005,9 +915,6 @@ footer small {
     width: 100%;
     padding: 15px;
   }
-  .project-img-container img {
-    max-width: 100%;
-  }
 
 }
 
@@ -1015,6 +922,7 @@ footer small {
 @media only screen and (min-width: 1200px) {
 
   /* Header Styles */
+
 
   /* WEBSITE ABOUT PAGE */
 
@@ -1032,11 +940,8 @@ footer small {
 @media only screen and (min-width: 1270px) {
 
   /* General Styles */
-  .content-wrap {
-    padding-bottom: 159px;  /* 159px min so footer does not overlap */
-  }
   .about-c-wrap {
-    padding-bottom: 245px; 
+    padding-bottom: 245px; /* 159px min so footer does not overlap */
   }
 
   /* WEBSITE ABOUT PAGE */
@@ -1058,7 +963,6 @@ footer small {
   /* Portfolio Page Styles */
   .portpage-content {
     max-width: 1080px;
-    display: flex;
     justify-content: flex-start;
   }
 }
@@ -1084,6 +988,13 @@ footer small {
   }
   .about-me-hobby {
     width: 60%;
+  }
+  .hobby-img-container {
+    width: 30%;
+    margin-right: 50px;
+  }
+  .hobby-text {
+    width: 70%;
   }
 
 }

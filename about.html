@@ -9,25 +9,26 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="Styles/reset.css">
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="Scripts/aboutNavScroll.js" defer></script>
     <script src="Scripts/handleCleanRefresh.js" defer></script>
-    <script src="Scripts/handleInternalLinking.js" defer></script>
     <script src="Scripts/headerMenu.js" defer></script>
   </head>
 
   <body>
     
     <div class="content-wrap about-c-wrap">
+
       <header>
         <div class="header-img-container">
-          <img src="Images/mWLogoAttempt5.webp" alt="">
-          <img src="Images/menuPic1.svg" alt="" class="hamburger-icon">
+          <img src="Images/mWLogo1.webp" alt="website logo made of letters m and w mixed together">
+          <img src="Images/menuPic1.svg" alt="three line menu icon" aria-label="hamburger menu icon iamge used as button" class="hamburger-icon">
         </div>
-        <!-- <h1>Website Title</h1> -->
         <nav class="header-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -38,28 +39,42 @@
       </header>
 
       <main>
-
         <section class="about-me">
-
-          <h2>About Me</h2>
-
+          <h1>About Me</h1>
           <div class="about-me-intro">
             <div class="about-me-content">
-              <div class="about-text">
-                <h3 id="top-header">Who am I?</h3>
+              <div class="about-text container">
+                <h2 id="top-header">Who am I?</h2>
                 <p class="about-intro-text-medium about-me-p">	 
                   Hi, I'm Matthew Wiberg, programmer, athlete and baked-goods-enthusiast. 
                 </p>
                 <p class="about-me-p">
-                  I love spending time to learn something new, especially when it comes to computer technology. 
+                  Grasping the underlying concept of how something works means a lot to me. 
+                  Such an understanding allows for possible solutions to current problems or perhaps optimization of current products. 
+                </p>
+                <p class="about-me-p">
+                  This progressive mindset is what I am passionate about. 
+                  Acts that always lead forward, always looking for improvement rather than staying content.
+                </p>
+                <p class="about-me-p">
+                  Immersing myself into an activity is another passion of mine. 
+                  Whether I'm playing a video game, reading a book, playing a sport or solving a long and intense programming problem, I love to set aside time to really dwelve into what I'm currently doing. 
+                </p>
+                <p class="about-me-p">
+                  Settling in for the long haul is something I am comfortable.
+                  It's always been within my discipline to see something through to the end that I made a commitment to. 
+                  Not only is it just my discipline, but my curosity as well that really motivates me to see a final outcome.
+                </p>
+                <!-- <p class="about-me-p">
+                  I love spending the time to learn something new, especially when it comes to computer technology. 
                   While I love learning how to do something new, I really strive to understand why something works the way it does if I am going to be doing it. 
                 </p>
                 <p class="about-me-p">
                   I like to think that when you are able to both make an accomplishment and explain how you made that accomplishment, you are the most effective in your respected subject field.
-                </p>
+                </p> -->
               </div>
               <div class="about-img-container">
-                <img src="Images/profileHeadshot2.jpg" alt="headshot of Matthew Wiberg" aria-label="profile headshot picture">
+                <img src="Images/profileHeadshot1.jpg" alt="headshot of Matthew Wiberg">
               </div>
             </div>
           </div>
@@ -74,8 +89,8 @@
           </nav>
 
           <div id="status" class="about-me-status">
-            <div class="about-me-status-text">
-              <h3>Where am I now?</h3>
+            <div class="about-me-status-text container">
+              <h2>Where am I now?</h2>
               <p class="about-me-p">	
                 I'm a graduate of Virginia Wesleyan University. 
                 I graduated in May of 2020 with a Bachelor's Degree of Science in Computer Science and a minor in Mathematics. 
@@ -96,53 +111,53 @@
           </div>
 
           <div id="hobbies" class="about-me-hobbies">
-            <div class="about-me-hobbies-text">
-              <h3>What do I enjoy?</h3>
+            <div class="about-me-hobbies-text container">
+              <h2>What do I enjoy?</h2>
               <p class="about-me-p">
                 When I'm not programming, I enjoy spending my time playing soccer and tennis, working out, looking at new computer parts, or picking out a delicious pastry. 
               </p>
             </div>
-            <div class="about-me-hobby">
+            <div class="about-me-hobby container">
               <div class="hobby-img-container">
-                <img src="Images/avatar.jpg" alt="">
+                <img src="Images/mattSoccerScreenShot1.jpg" alt="matthew wiberg playing soccer">
               </div>
               <p class="hobby-text about-me-p">
-                Sports have always been an important part of my life since a young age, specifically soccer, which I played throughout college. 
-                Now I play soccer occasionally for fun and also picked up tennis as a new hobby.
+                Sports have always been an integral part of my life. 
+                Starting at a young age I played parks and recreational soccer, then moved on to years of competitive travel soccer and eventually ended the journey at the collegiate level. 
+                Now, I occasionally play soccer for fun and have also ventured into the world of tennis.
               </p>
             </div>
-            <div class="about-me-hobby">
+            <div class="about-me-hobby container">
               <div class="hobby-img-container">
-                <img src="Images/avatar.jpg" alt="">
+                <img src="Images/workoutPic1.webp" alt="matthew wiberg working out">
               </div>
               <p class="hobby-text about-me-p">
-                Working out became one of my favorite things to do since I started my freshman year in college. 
-                Going to the gym and being able to gain strength and essentially "upgrade" yourself is something that feels amazing and keeps me motivated to continue. 
+                Working out quickly became one of my favorite activities since I started my freshman year in college. 
+                Going to the gym is something that makes me better, some progressive act that helps keep me motivated and to stay on a schedule. 
               </p>
             </div>
-            <div class="about-me-hobby">
+            <div class="about-me-hobby container">
               <div class="hobby-img-container">
-                <img src="Images/computerPic2.jpg" alt="">
+                <img src="Images/computerPic1.jpg" alt="computer with purple lights on">
               </div>
               <p class="hobby-text about-me-p">
                 Computers really peaked my interest once I began playing around with more graphical-demanding video games.  
                 I recently ended up researching and buying all the parts I needed to build my first pc and I do not regret it one bit.
               </p>
             </div>
-            <div class="about-me-hobby">
+            <div class="about-me-hobby container">
               <div class="hobby-img-container">
-                <img src="Images/avatar.jpg" alt="">
+                <img src="Images/cherryPieScreenShot1.jpg" alt="cherry pie with kitchen tools">
               </div>
               <p class="hobby-text about-me-p no-margin-bottom">
-                My love for baked goods has grown so much over the years, it has produced quite the sweet-tooth in me. If I had to pick a favorite, cherry pie would take the cake.
+                My love for baked goods has grown so much over the years, it has produced quite the sweet-tooth in me. Everything from triple-layered vanilla cakes to raspberry danishes are game. However, if I had to pick a favorite, a classic cherry pie would certainly take the cake.
               </p>
             </div>
           </div>
 
           <div id="contact" class="about-me-contact">
-            
-            <div class="about-me-contact-text">
-              <h3>Contact</h3>
+            <div class="about-me-contact-text container">
+              <h2>Contact</h2>
               <p class="about-me-contact-desc about-me-p">
                 Want to get in touch with me? Contact me at <em>540-845-6170</em> or <a href="mailto:mdwiberg@vwu.edu" class="about-contact-link"><em>mdwiberg@vwu.edu</em></a>. 
                 Feel free to also checkout my <a href="https://github.com/MDWiberg" target="_blank" class="about-contact-link"><em>Github</em></a> and <a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank" class="about-contact-link"><em>LinkedIn</em></a>, or my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a>.
@@ -156,12 +171,11 @@
                 <li>View my <a href="Images/resumePDFTest2.pdf" target="_blank" class="about-contact-link"><em>Resume</em></a></li>
               </ul> 
             </div>
-
           </div>
 
           <div id="skills" class="about-me-skills">
-            <div class="about-me-skills-icons">
-              <h3>Skills</h3>
+            <div class="about-me-skills-icons container">
+              <h2>Skills</h2>
               <ul class="about-me-skills-list">
                 <li class="skills-icons"><svg viewBox="0 0 128 128">
                   <path fill="#E44D26" d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z"></path>
@@ -196,30 +210,25 @@
               </ul>
             </div>
           </div>
-
         </section>
-
       </main>
 
       <footer class="bottom-footer">
-
         <nav>
           <ul>
-            <li><a href="mailto:mdwiberg@vwu.edu"><img src="https://img.icons8.com/nolan/50/apple-mail.png"/></a></li>
-            <li><a href="https://github.com/MDWiberg" target="_blank"><img src="https://img.icons8.com/nolan/50/github.png"/></a></li>
-            <li><a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank"><img src="https://img.icons8.com/nolan/50/linkedin.png"/></a></li>
+            <li><a href="mailto:mdwiberg@vwu.edu"><img src="https://img.icons8.com/nolan/50/apple-mail.png" alt="mail icon"/></a></li>
+            <li><a href="https://github.com/MDWiberg" target="_blank"><img src="https://img.icons8.com/nolan/50/github.png" alt="github icon"/></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-wiberg-7b0a19186/" target="_blank"><img src="https://img.icons8.com/nolan/50/linkedin.png" alt="linkedin icon"/></a></li>
           </ul>
         </nav>
-
         <ul id="icon-credit-list">
           <li><a href="https://icons8.com/icon/ihMzI7k32pJf/mail" target="_blank"><small><span class="icon-credit-link">Mail icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
           <li><a href="https://icons8.com/icon/52539/github" target="_blank"><small><span class="icon-credit-link">GitHub icon by Icons8</span></small></a><span class="icon-separator"> |</span></li>
           <li><a href="https://icons8.com/icon/44019/linkedin" target="_blank"><small><span class="icon-credit-link">LinkedIn icon by Icons8</span></small></a></li>
         </ul>
-
         <small id="copyright">&copy; 2021 Matthew Wiberg</small>
-
       </footer>
+      
     </div>
 
   </body>
