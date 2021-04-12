@@ -6,7 +6,6 @@
 window.onload = () => {
 
   let url = window.location.href;
-  console.log(sessionStorage.getItem("scrollTrue"));
 
   // Checks if there was session storage saved and scrolls to the saved position if so
   if(sessionStorage.getItem("scrollTrue")){

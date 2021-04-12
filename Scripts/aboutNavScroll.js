@@ -3,11 +3,12 @@
 
 
 let aboutMeNav = document.querySelector('.about-me-nav');
+console.log(aboutMeNav);
 
 window.onscroll = () => {
   "use strict";
 
-  if(window.pageYOffset >= aboutMeNav.offsetTop){
+  if(Math.round(window.pageYOffset) >= aboutMeNav.offsetTop){
     aboutMeNav.classList.add("nav-shadow");
   }
   else{
