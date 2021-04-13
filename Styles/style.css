@@ -257,7 +257,9 @@ header img {
 .about-me-hobbies,
 .about-me-skills,
 .about-me-contact {
-  scroll-margin-top: 70px;
+  /* scroll-margin-top: 70px; Does not work for iOS */
+  padding-top: 70px;
+  margin-top: -70px; /* Fix for iOS */
 }
 .about-me-contact-desc {
   display: none;
@@ -813,7 +815,8 @@ footer small {
   .about-me-hobbies,
   .about-me-skills,
   .about-me-contact {
-    margin-top: 50px;
+    /* margin-top: 50px; Use with scroll-margin-top, which is not support by iOS yet*/
+    margin-top: -20px;
   }
   .about-me-status-text,
   .about-me-hobbies-text {
