@@ -163,6 +163,7 @@ header img {
 /* About-Me Styles */
 .about-me {
   line-height: 1.5;
+  scroll-snap-type: y mandatory;
 }
 .about-me h1 {
   padding: 15px;
