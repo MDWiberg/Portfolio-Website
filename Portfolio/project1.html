@@ -2,17 +2,17 @@
 <html lang="en">
   <head> 
     <meta charset="utf-8">
-    <meta name="description" content="Credit Card Validator project description page">
+    <meta name="description" content="Weather Forecast project description page">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Matthew Wiberg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="Styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="Scripts/headerMenu.js" defer></script>
+    <script src="../Scripts/headerMenu.js" defer></script>
   </head>
 
   <body>
@@ -21,28 +21,28 @@
 
       <header>
         <div class="header-img-container">
-          <img src="Images/mWLogo1.png" alt="website logo made of letters m and w mixed together">
-          <img src="Images/menuPic1.svg" alt="three line menu icon" aria-label="hamburger menu icon iamge used as button" class="hamburger-icon">
+          <img src="../Images/mWLogo1.png" alt="website logo made of letters m and w mixed together">
+          <img src="../Images/menuPic1.svg" alt="three line menu icon" aria-label="hamburger menu icon iamge used as button" class="hamburger-icon">
         </div>
         <nav class="header-menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="no-border-right no-padding-right"><a href="portfolioPage.html">Portfolio</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/index.html">About</a></li>
+            <li class="no-border-right no-padding-right"><a href="index.html">Portfolio</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
         <section class="project-page">
-          <h1>Credit Card Validator</h1>
+          <h1>Weather Forecast App</h1>
           <div class="project-content">
             <div class="project-text container">
               <h2 id="top-header">Description</h2>
-              <p>The goal of this web app is to recieve an input credit/debit card number from a user to check if the number they input is valid or not.</p>
-              <p>The credit card company (Amex, Discover, MasterCard, Visa or otherwise unknown) is reported regardless if the card number is valid or not.</p> 
-              <p>This project's main focus was to practice integrating JavaScript to give functionality to an otherwise static HTML page.</p>
-              <p>View source <a href="https://github.com/MDWiberg/Credit-Card-Validator" class="project-link"><em>code</em>.</a></p>
+              <p>The goal of this web app is to fetch the weather forecast of a specified city for the current and following five days.</p>
+              <p>The city input is used as the query parameter for API endpoint to return the current and five day weather forecast.</p>
+              <p>This project's main focus was using the Fetch API alongside the OpenWeatherData API to practice using API's.</p> 
+              <p>View source <a href="https://github.com/MDWiberg/Weather-Forecast" class="project-link"><em>code</em></a>.</p>
               <h2>Languages</h2>
               <ul>
                 <li class="language-icons"><svg viewBox="0 0 128 128">
@@ -66,9 +66,8 @@
               </ul>
             </div>
             <div class="project-img-container">
-              <img src="Images/creditCardScreenshot1.png" alt="screenshot of the credit card validator">
-              <!-- <iframe src="../../Random_Projects/credit_card_form/index.html"></iframe> -->
-              <!-- http://localhost:8080/ -->
+              <img src="../Images/weatherForecastScreenshot1.png" alt="screenshot of the weather forecast app">
+              <!-- <iframe src="../../Random_Projects/weather_forecast/index.html"></iframe> -->
             </div>
           </div>
         </section>
@@ -89,8 +88,8 @@
         </ul>
         <small id="copyright">&copy; 2021 Matthew Wiberg</small>
       </footer>
-
     </div>
+
     
   </body>
 </html>
