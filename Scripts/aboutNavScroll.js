@@ -3,7 +3,6 @@
 
 
 let aboutMeNav = document.querySelector('.about-me-nav');
-console.log(aboutMeNav);
 
 window.onscroll = () => {
   "use strict";

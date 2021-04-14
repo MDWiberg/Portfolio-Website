@@ -5,8 +5,6 @@
 let menuIcon = document.querySelector('.hamburger-icon');
 let menu = document.querySelector('.header-menu');
 
-console.log(document.body.style.width);
-
 let handleClick = (e) => {
 
   // Use when editing direct style property of a element
